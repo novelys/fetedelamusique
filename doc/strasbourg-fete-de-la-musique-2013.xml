@@ -1,0 +1,961 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lineup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0" lang="fr">
+	<band url="http://www.redlight-dreams.com">
+		<name>Redlight Dreams</name>
+		<genre>Pop énergie</genre>
+		<description>Groupe vainqueur de la scène Tremplin 2012, les Redlight Dreams surfent allègrement d'une décennie à l'autre avec une énergie radieuse et une voix qui lui donne une signature immédiate. La pop energy des Redlight Dreams transporte son public en dehors des sentiers battus.</description>
+		<picture>
+			<description>Redlight Dreams</description>
+			<url>http://strasbourg.oyozik.com/live/redlight-dreams.jpg</url>
+			<dimension>
+				<width unit="px">4752</width>
+				<height unit="px">3168</height>
+			</dimension>
+		</picture>
+		<live start="2013-06-21T18:00:00+02:00" end="2013-06-21T18:45:00+02:00">
+			<location lat="48.5834" lon="7.74583">
+				<name alt="place Kléber">scène Tête d'affiche</name>
+				<description></description>
+			</location>
+		</live>
+	</band>
+	<band url="http://monyandthehatmen.bandcamp.com/">
+		<name>Mony &amp; the Hatmen</name>
+		<genre>Folk Rock</genre>
+		<description>Mony c'est une voix, un lien entre le blues profond du siècle dernier et le rock indépendant. Lui et ses Hatmen embarquent leur public dans un road trip à la bande son émaillée d'accents américains.</description>
+		<picture>
+			<description>Mony &amp; the Hatmen</description>
+			<url>http://strasbourg.oyozik.com/live/mony-and-the-hatmen.jpg</url>
+			<dimension>
+				<width unit="px">663</width>
+				<height unit="px">318</height>
+			</dimension>
+		</picture>
+		<live start="2013-06-21T19:00:00+02:00" end="2013-06-21T19:45:00+02:00">
+			<location lat="48.5834" lon="7.74583">
+				<name alt="place Kléber">scène Tête d'affiche</name>
+				<description></description>
+			</location>
+		</live>
+	</band>	
+	<band>
+		<name>Voix du Sud</name>
+		<genre></genre>
+		<description>Les musiciens qui participent au projet Voix du Sud/ Voix du Nord présenteront un spectacle restituant 10 jours d'ateliers à l'espace culturel Django Reinhardt</description>
+		<live start="2013-06-21T20:15:00+02:00" end="2013-06-21T21:45:00+02:00">
+			<location lat="48.5834" lon="7.74583">
+				<name alt="place Kléber">scène Tête d'affiche</name>
+				<description></description>
+			</location>
+		</live>
+	</band>	
+	<band url="http://www.calimusic.fr/">
+		<name>Cali</name>
+		<genre>Rock français</genre>
+		<description>Artiste international à mi chemin entre la chanson et le rock français se produira pour présenter son nouvel album Vernet les bains</description>
+		<picture>
+			<description>Cali</description>
+			<url>http://strasbourg.oyozik.com/live/cali.jpg</url>
+			<dimension>
+				<width unit="px">960</width>
+				<height unit="px">960</height>
+			</dimension>
+		</picture>
+		<live start="2013-06-21T22:15:00+02:00" end="2013-06-22T00:00:00+02:00">
+			<location lat="48.5834" lon="7.74583">
+				<name alt="place Kléber">scène Tête d'affiche</name>
+				<description></description>
+			</location>
+		</live>
+	</band>	
+	<band url="http://www.noomiz.com/LaaKenjo">
+		<name>Kenjo</name>
+		<genre>Folk</genre>
+		<description>La voix claire comme les idées, Kenjo les déroule avec sa guitare, comme on tire le fil d'un cocon. De ci, de là, elle mélange les genres et les langues. Au final, des chansons fluides et chatoyantes, solides comme la soie. Ecoutez, écoutez et faites en sorte de l'attraper !</description>
+		<picture>
+			<description>Kenjo</description>
+			<url>http://strasbourg.oyozik.com/live/kenjo.jpg</url>
+			<dimension>
+				<width unit="px">3744</width>
+				<height unit="px">5616</height>
+			</dimension>
+		</picture>
+		<live start="2013-06-21T18:00:00+02:00" end="2013-06-21T18:35:00+02:00">
+			<location lat="48.58458" lon="7.7495">
+				<name alt="place Broglie">scène Découverte</name>
+				<description></description>
+			</location>
+		</live>
+	</band>	
+	<band>
+		<name>Groupe ARES'IDIV</name>
+		<genre></genre>
+		<description>La Ville de Strasbourg accueille le vainqueur de la scène ARES'IDIV.</description>
+		<live start="2013-06-21T18:50:00+02:00" end="2013-06-21T19:25:00+02:00">
+			<location lat="48.58458" lon="7.7495">
+				<name alt="place Broglie">scène Découverte</name>
+				<description></description>
+			</location>
+		</live>
+	</band>	
+	<band url="http://www.myspace.com/65227031">
+		<name>16 Kat</name>
+		<genre>Rock français</genre>
+		<description>Le groupe 16kat c'est plus de 300 concerts à travers la France et l'Europe avec des passages remarqués à la laiterie, à l'Illiade... Le groupe dépote un rock à 200 km/heure festif qui ne s'arrête jamais! L'album produit  par le label kebra'ecords a reçu des critiques unanimes et favorables</description>
+		<live start="2013-06-21T19:40:00+02:00" end="2013-06-21T20:15:00+02:00">
+			<location lat="48.58458" lon="7.7495">
+				<name alt="place Broglie">scène Découverte</name>
+				<description></description>
+			</location>
+		</live>
+	</band>	
+	<band url="http://stereotryp.bandcamp.com/">
+		<name>Stereotryp</name>
+		<genre>Rock français</genre>
+		<description>Les fines lames du label strasbourgeois Lemon Sounds Records ont récemment sortie l'artillerie lourde, l'Ep bien nommé « Qomolangma », ou l'Everest en tibétain. Ne vous y trompez pas, avec Stereotryp l'ascension sera jouissive et oxygénée.</description>
+		<picture>
+			<description>Stereotryp</description>
+			<url>http://strasbourg.oyozik.com/live/stereotryp.jpg</url>
+			<dimension>
+				<width unit="px">648</width>
+				<height unit="px">960</height>
+			</dimension>
+		</picture>
+		<live start="2013-06-21T20:30:00+02:00" end="2013-06-21T21:05:00+02:00">
+			<location lat="48.58458" lon="7.7495">
+				<name alt="place Broglie">scène Découverte</name>
+				<description></description>
+			</location>
+		</live>
+	</band>	
+	<band url="http://laccordderaide.bandcamp.com/">
+		<name>L'accord de Raide</name>
+		<genre>Ska Rock</genre>
+		<description>Après une première démo parue courant 2010, posant les bases des 1ers passages sur de nombreuses scènes du Grand-Est, L'Accord de Raide déboule début avril 2013 avec un premier album intitulé Funambules. Neuf titres à l'esprit rock, puissants tour à tour dans le ska, le punk, le reggae et le dub.</description>
+		<live start="2013-06-21T21:20:00+02:00" end="2013-06-21T21:55:00+02:00">
+			<location lat="48.58458" lon="7.7495">
+				<name alt="place Broglie">scène Découverte</name>
+				<description></description>
+			</location>
+		</live>
+	</band>
+	<band url="https://soundcloud.com/bobinche">
+		<name>Bobinche</name>
+		<genre>Chanson française</genre>
+		<description>Passer la porte de Bobinche, c'est faire 33 p'tis tours de chansons qui claquent ! Le français d'aujourd'hui soutenu par des instruments qui carburent à l'essence de Barbapapa. Accordéon, guitare, basse et batterie embarquent dans une simca qui emprunte un sillon frais et incisif à la fois.</description>
+		<picture>
+			<description>Bobinche</description>
+			<url>http://strasbourg.oyozik.com/live/bobinche.jpg</url>
+			<dimension>
+				<width unit="px">3648</width>
+				<height unit="px">2736</height>
+			</dimension>
+		</picture>
+		<live start="2013-06-21T22:10:00+02:00" end="2013-06-21T22:45:00+02:00">
+			<location lat="48.58458" lon="7.7495">
+				<name alt="place Broglie">scène Découverte</name>
+				<description></description>
+			</location>
+		</live>
+	</band>	
+	<band url="http://fr.myspace.com/theelements4">
+		<name>Elements 4</name>
+		<genre>Electro Pop Rock</genre>
+		<description>Ambiance New Wave rafraîchie, look coloré, c'est sans complexe que la fratrie d'elements4 entend nous faire partager son univers musical. Elements4 nous sert un cocktail de sonorités pop électro joyeuses parfois teintées d'une ambiance plus froide, un zeste de The Cure, une pincée de New Order</description>
+		<picture>
+			<description>Elements 4</description>
+			<url>http://strasbourg.oyozik.com/live/elements-4.jpg</url>
+			<dimension>
+				<width unit="px">4120</width>
+				<height unit="px">3043</height>
+			</dimension>
+		</picture>
+		<live start="2013-06-21T23:00:00+02:00" end="2013-06-21T23:35:00+02:00">
+			<location lat="48.58458" lon="7.7495">
+				<name alt="place Broglie">scène Découverte</name>
+				<description></description>
+			</location>
+		</live>
+	</band>
+	<band url="http://www.reverbnation.com/odonatamusic">
+		<name>Odonata</name>
+		<genre>Electro Rock</genre>
+		<description>Un trio sans guitare ni clavier. L'univers d'Odonata se construit autour de la basse (Christophe Piquet), des percussions (Jérémy Steibel) et du chant, en français. Des textes impressionnistes à l'imparable musicalité ciselés et portés par Céline Righi (auteur pour le duo Scotch&amp;Sofa, entre autres).</description>
+		<picture>
+			<description>Odonata</description>
+			<url>http://strasbourg.oyozik.com/live/odonata.jpg</url>
+			<dimension>
+				<width unit="px">960</width>
+				<height unit="px">638</height>
+			</dimension>
+		</picture>
+		<live start="2013-06-21T23:50:00+02:00" end="2013-06-22T00:25:00+02:00">
+			<location lat="48.58458" lon="7.7495">
+				<name alt="place Broglie">scène Découverte</name>
+				<description></description>
+			</location>
+		</live>
+	</band>	
+	<band>
+		<name>Peiraguda</name>
+		<genre>Folk occitan</genre>
+		<description>Le groupe PEIRAGUA vient de fêter ses 35 ans et vous chantera ses histoires en occitan.  </description>
+		<picture>
+			<description>Peiraguda</description>
+			<url>http://strasbourg.oyozik.com/live/peiraguda.jpg</url>
+			<dimension>
+				<width unit="px">600</width>
+				<height unit="px">450</height>
+			</dimension>
+		</picture>
+		<live start="2013-06-21T18:00:00+02:00" end="2013-06-21T18:35:00+02:00">
+			<location lat="48.58" lon="7.74975">
+				<name alt="place de l'étal">scène Découverte</name>
+				<description></description>
+			</location>
+		</live>
+	</band>
+	<band url="http://www.youtube.com/watch?v=IeUMiZo30W8">
+		<name>Les Semi Croustillants</name>
+		<genre>Trad alternatif</genre>
+		<description>Croustillants comme des chips saveur moutarde et semi comme la moitié d'une chose définie, ce nom intrigant risque de vous entraîner dans d'interminables réflexions sur le sens dévolu à ces deux mots. Ne reste qu'une solution : venir à leur bal ou concert et apprécier leur énergie croustillante !</description>
+		<live start="2013-06-21T18:50:00+02:00" end="2013-06-21T19:25:00+02:00">
+			<location lat="48.58" lon="7.74975">
+				<name alt="place de l'étal">scène Découverte</name>
+				<description></description>
+			</location>
+		</live>
+	</band>
+	<band url="http://18-12.bandcamp.com/album/premier">
+		<name>18 12</name>
+		<genre>Rock</genre>
+		<description>Plus Rock que Téléphone, plus speed que Starshooter, le power trio est fondé en 2010 à Strasbourg. En 2012, ils sortent leur premier album, un univers qui vous donne la pêche, qui surprend, dérange, dévaste les préjugés du Rock Roots.</description>
+		<picture>
+			<description>18 12</description>
+			<url>http://strasbourg.oyozik.com/live/18-12.jpg</url>
+			<dimension>
+				<width unit="px">220</width>
+				<height unit="px">153</height>
+			</dimension>
+		</picture>
+		<live start="2013-06-21T19:40:00+02:00" end="2013-06-21T20:15:00+02:00">
+			<location lat="48.58" lon="7.74975">
+				<name alt="place de l'étal">scène Découverte</name>
+				<description></description>
+			</location>
+		</live>
+	</band>
+	<band url="https://soundcloud.com/search?q=snatchband">
+		<name>Snatch Band</name>
+		<genre>Blues Rock</genre>
+		<description>Le Groupe Snatch Band est né un soir de mai 2011 avec une envie : le mélange des genres afin de permettre au public de découvrir d'autres reprises, qui donnent envie d'en savourer d'avantages.  Résultat : un fabuleux  mélange de reprises de Blues et Rock qui ne laisse personne indifférent !</description>
+		<picture>
+			<description>Snatch Band</description>
+			<url>http://strasbourg.oyozik.com/live/snatch-band.jpg</url>
+			<dimension>
+				<width unit="px">960</width>
+				<height unit="px">600</height>
+			</dimension>
+		</picture>
+		<live start="2013-06-21T20:30:00+02:00" end="2013-06-21T21:05:00+02:00">
+			<location lat="48.58" lon="7.74975">
+				<name alt="place de l'étal">scène Découverte</name>
+				<description></description>
+			</location>
+		</live>
+	</band>
+	<band url="http://leriks.bandcamp.com/">
+		<name>Lériks</name>
+		<genre>Chanson Groove</genre>
+		<description>Lériks vous propose un répertoire de chansons vivaces, loin des sentiers battus. Il jongle avec les mots et les met en scène. Les morceaux titillent l'imagination et se révèlent parfois bien polissons. Le trio survole les sentiments humains sur un tapis de grooves funky teintés de blues, rock, ...</description>
+		<picture>
+			<description>Lériks</description>
+			<url>http://strasbourg.oyozik.com/live/leriks.jpg</url>
+			<dimension>
+				<width unit="px">2006</width>
+				<height unit="px">1302</height>
+			</dimension>
+		</picture>
+		<live start="2013-06-21T21:20:00+02:00" end="2013-06-21T21:55:00+02:00">
+			<location lat="48.58" lon="7.74975">
+				<name alt="place de l'étal">scène Découverte</name>
+				<description></description>
+			</location>
+		</live>
+	</band>
+	<band url="http://www.zicmeup.com/groupe/thetolefamily/  ">
+		<name>The Tole Family</name>
+		<genre>Reggae World</genre>
+		<description>The Tole Family propose un reggae authentique et original marqué d'influences variées et ayant pour origine le métissage de ses musiciens ainsi que leur mixité culturelle. La richesse de ses créations nous transporte dans un univers métissé de cultures, d'horizons et de sonorités diverses.</description>
+		<picture>
+			<description>The Tole Family</description>
+			<url>http://strasbourg.oyozik.com/live/the-tole-family.jpg</url>
+			<dimension>
+				<width unit="px">1280</width>
+				<height unit="px">960</height>
+			</dimension>
+		</picture>
+		<live start="2013-06-21T22:10:00+02:00" end="2013-06-21T22:45:00+02:00">
+			<location lat="48.58" lon="7.74975">
+				<name alt="place de l'étal">scène Découverte</name>
+				<description></description>
+			</location>
+		</live>
+	</band>		
+	<band url="http://www.soundcloud.com/lunagritt">
+		<name>Luna Gritt</name>
+		<genre>Pop</genre>
+		<description>“un bain vintage... des effluves de pop-rock anglais sixties” Rock &amp; Folk
+		“chaque morceau est un véritable tube en puissance” Discordance
+		Luna Gritt a déjà évoqué pour certains les mélodies imparables à la Elliott
+		Smith, David Bowie, The Kinks ou encore le coffre atypique d'Amy Winehouse.</description>
+		<picture>
+			<description>Luna Gritt</description>
+			<url>http://strasbourg.oyozik.com/live/luna-gritt.jpg</url>
+			<dimension>
+				<width unit="px">1000</width>
+				<height unit="px">659</height>
+			</dimension>
+		</picture>
+		<live start="2013-06-21T23:00:00+02:00" end="2013-06-21T23:35:00+02:00">
+			<location lat="48.58" lon="7.74975">
+				<name alt="place de l'étal">scène Découverte</name>
+				<description></description>
+			</location>
+		</live>
+	</band>	
+	<band url="http:///www.grandmarch.fr">
+		<name>Grand March</name>
+		<genre>Folk Rock</genre>
+		<description>Grand March affiche une passion évidente pour la musique folk-rock, une inspiration indéniablement littéraire et cinématographique, un amour des grands espaces et une attirance pour les personnages abîmés par la vie...</description>
+		<picture>
+			<description>Grand March</description>
+			<url>http://strasbourg.oyozik.com/live/grand-march.jpg</url>
+			<dimension>
+				<width unit="px">300</width>
+				<height unit="px">300</height>
+			</dimension>
+		</picture>
+		<live start="2013-06-21T23:50:00+02:00" end="2013-06-22T00:25:00+02:00">
+			<location lat="48.58" lon="7.74975">
+				<name alt="place de l'étal">scène Découverte</name>
+				<description></description>
+			</location>
+		</live>
+	</band>	
+	<band url="http://www.plug-out.fr">
+		<name>Plug Out</name>
+		<genre>Pop Rock</genre>
+		<description>Plug Out est un groupe de 4 musiciens, Jérôme au chant, guitare et piano, Laurent à la batterie, Manu à la basse, au violon et chœurs, Vincent-Etienne à la guitare, au violon et chœurs. Plug Out compose des morceaux pop-rock, influencés par des groupes tels que Coldplay, Radiohead ou Muse.</description>
+		<picture>
+			<description>Plug Out</description>
+			<url>http://strasbourg.oyozik.com/live/plug-out.jpg</url>
+			<dimension>
+				<width unit="px">640</width>
+				<height unit="px">364</height>
+			</dimension>
+		</picture>
+		<live start="2013-06-21T18:00:00+02:00" end="2013-06-21T18:35:00+02:00">
+			<location lat="48.58125" lon="7.74853">
+				<name alt="place Gutenberg">scène Tremplin</name>
+				<description></description>
+			</location>
+		</live>
+		<vote url="http://strasbourg.oyozik.com/vote/plug-out" />
+	</band>	
+	<band url="http://www.myspace.com/sdfunknroll">
+		<name>Sex Drug'n Funk'n Roll</name>
+		<genre>Rock Funk</genre>
+		<description>Franchement reformé après une pause de deux ans suite aux voyages à travers le monde de ses différents membres, le groupe SDF est de retour avec des compos qui sont un savant mélange de l'énergie du Rock, du Groove et du Funk qui sauront vous faire vibrer !</description>
+		<picture>
+			<description>Sex Drug'n Funk'n Roll</description>
+			<url>http://strasbourg.oyozik.com/live/sex-drug-n-funk-n-roll.jpg</url>
+			<dimension>
+				<width unit="px">558</width>
+				<height unit="px">604</height>
+			</dimension>
+		</picture>
+		<live start="2013-06-21T18:50:00+02:00" end="2013-06-21T19:25:00+02:00">
+			<location lat="48.58125" lon="7.74853">
+				<name alt="place Gutenberg">scène Tremplin</name>
+				<description></description>
+			</location>
+		</live>
+		<vote url="http://strasbourg.oyozik.com/vote/sex-drug-n-funk-n-roll" />
+	</band>	
+	<band url="https://www.facebook.com/HappyHoursProject?fref=ts">
+		<name>Inside Us</name>
+		<genre>Blues Rock</genre>
+		<description> Inside Us est une formation issue d'une certaine forme de providence. Alors que de nombreux musiciens organisaient des soirées d'improvisation au sein de leur établissement, Cyprien, David, et Samuel s'identifièrent instantanément musicalement. Diverse influences pour un groupe original !</description>
+		<picture>
+			<description>Inside Us</description>
+			<url>http://strasbourg.oyozik.com/live/inside-us.jpg</url>
+			<dimension>
+				<width unit="px">788</width>
+				<height unit="px">640</height>
+			</dimension>
+		</picture>
+		<live start="2013-06-21T19:45:00+02:00" end="2013-06-21T20:15:00+02:00">
+			<location lat="48.58125" lon="7.74853">
+				<name alt="place Gutenberg">scène Tremplin</name>
+				<description></description>
+			</location>
+		</live>
+		<vote url="http://strasbourg.oyozik.com/vote/inside-us" />
+	</band>	
+	<band url="https://soundcloud.com/meetmeinthetree">
+		<name>Meet me in the tree</name>
+		<genre>Brit' Pop Rock</genre>
+		<description>MEET ME IN THE TREE c'est l'histoire d'une rencontre entre 3 musiciens réunis par l'envie de créer un projet bien à eux tinté de leurs nombreuses influences comme Artic Monkeys, Ghinzu, Incubus ... Le groupe part à votre rencontre pour vous faire découvrir son univers en live et sur la toile.</description>
+		<picture>
+			<description>Meet me in the tree</description>
+			<url>http://strasbourg.oyozik.com/live/meet-me-in-the-tree.jpg</url>
+			<dimension>
+				<width unit="px">500</width>
+				<height unit="px">500</height>
+			</dimension>
+		</picture>
+		<live start="2013-06-21T20:30:00+02:00" end="2013-06-21T21:05:00+02:00">
+			<location lat="48.58125" lon="7.74853">
+				<name alt="place Gutenberg">scène Tremplin</name>
+				<description></description>
+			</location>
+		</live>
+		<vote url="http://strasbourg.oyozik.com/vote/meet-me-in-the-tree" />
+	</band>	
+	<band url="www.intimejazz.com/site/music">
+		<name>In Time Jazz</name>
+		<genre>Funk Jazz 360°</genre>
+		<description>In Time Jazz est le fruit de l'union de 4 musiciens passionnés proposant ce mélange original : voyage entre funk, jazz, punk, electro-hip-hop et word music, le tout ponctué de groove. Une sorte de musique à 360 degrés ou comment faire apprécier une musique bourrée d'énergie à toutes les générations.</description>
+		<picture>
+			<description>In Time Jazz</description>
+			<url>http://strasbourg.oyozik.com/live/in-time-jazz.jpg</url>
+			<dimension>
+				<width unit="px">3696</width>
+				<height unit="px">2448</height>
+			</dimension>
+		</picture>
+		<live start="2013-06-21T21:20:00+02:00" end="2013-06-21T21:55:00+02:00">
+			<location lat="48.58125" lon="7.74853">
+				<name alt="place Gutenberg">scène Tremplin</name>
+				<description></description>
+			</location>
+		</live>
+		<vote url="http://strasbourg.oyozik.com/vote/in-time-jazz" />
+	</band>	
+	<band url="http://www.facebook.com/amplifive2012">
+		<name>AmpliFive</name>
+		<genre>Soul Jazz Funk</genre>
+		<description>Prenez cinq amis musiciens. Ajoutez-y une bonne dose de soul. Délayez avec un bon litre de funk. Complétez avec une pincée de jazz et un zeste de groove. Secouez et vous obtenez le cocktail musical de AmpliFive ! AmpliFive est un groupe de soul/funk/jazz créé en 2012.</description>
+		<picture>
+			<description>AmpliFive</description>
+			<url>http://strasbourg.oyozik.com/live/amplifive.jpg</url>
+			<dimension>
+				<width unit="px">4288</width>
+				<height unit="px">2560</height>
+			</dimension>
+		</picture>
+		<live start="2013-06-21T22:10:00+02:00" end="2013-06-21T22:45:00+02:00">
+			<location lat="48.58125" lon="7.74853">
+				<name alt="place Gutenberg">scène Tremplin</name>
+				<description></description>
+			</location>
+		</live>
+		<vote url="http://strasbourg.oyozik.com/vote/amplifive" />
+	</band>	
+	<band url="http://fr.myspace.com/altesseprune">
+		<name>Altesse Prune</name>
+		<genre>Pop Rock</genre>
+		<description>Composé de 5 musiciens (Marion au chant, Loïc à la guitare, Valéry guitare/piano/chant, Clément à la basse et Cédric à la batterie) aux univers musicaux très différents et personnels, Altesse Prune produit une musique aux tendances Rock, balayées par des mélodies troublantes, vaporeuses, lumineuses!</description>
+		<picture>
+			<description>Altesse Prune</description>
+			<url>http://strasbourg.oyozik.com/live/altesse-prune.jpg</url>
+			<dimension>
+				<width unit="px">3030</width>
+				<height unit="px">2230</height>
+			</dimension>
+		</picture>
+		<live start="2013-06-21T23:00:00+02:00" end="2013-06-21T23:35:00+02:00">
+			<location lat="48.58125" lon="7.74853">
+				<name alt="place Gutenberg">scène Tremplin</name>
+				<description></description>
+			</location>
+		</live>
+		<vote url="http://strasbourg.oyozik.com/vote/altesse-prune" />
+	</band>
+	<band url="http://enelos.bandcamp.com/">
+		<name>Enelos</name>
+		<genre>Folk acoustique</genre>
+		<description>Enelos évolue dans un univers folk et s'inspirant de différents styles, elle propose seule sur scène des compositions et quelques reprises, accompagnée de sa guitare et de sa pédale loop.</description>
+		<picture>
+			<description>Enelos</description>
+			<url>http://strasbourg.oyozik.com/live/enelos.jpg</url>
+			<dimension>
+				<width unit="px">1000</width>
+				<height unit="px">917</height>
+			</dimension>
+		</picture>
+		<live start="2013-06-21T23:50:00+02:00" end="2013-06-22T00:25:00+02:00">
+			<location lat="48.58125" lon="7.74853">
+				<name alt="place Gutenberg">scène Tremplin</name>
+				<description></description>
+			</location>
+		</live>
+		<vote url="http://strasbourg.oyozik.com/vote/enelos" />
+	</band>		
+	<band>
+		<name>Dj ‘s &amp; MC Baya</name>
+		<genre>DJ</genre>
+		<description></description>
+		<live start="2013-06-21T17:30:00+02:00" end="2013-06-21T18:00:00+02:00">
+			<location lat="48.57442" lon="7.759">
+				<name alt="parvis de la médiathèque André Malraux">scène culture urbaine</name>
+				<description></description>
+			</location>
+		</live>
+	</band>	
+	<band>
+		<name>Dj's Ngunza &amp; BobKelly</name>
+		<genre>DJ et danseurs</genre>
+		<description></description>
+		<live start="2013-06-21T18:00:00+02:00" end="2013-06-21T18:10:00+02:00">
+			<location lat="48.57442" lon="7.759">
+				<name alt="parvis de la médiathèque André Malraux">scène culture urbaine</name>
+				<description></description>
+			</location>
+		</live>
+	</band>	
+	<band url="https://www.youtube.com/watch?v=LTKe6otrHsM">
+		<name>Arnaud Perf</name>
+		<genre>R'n B / Rap</genre>
+		<description></description>
+		<live start="2013-06-21T18:10:00+02:00" end="2013-06-21T18:25:00+02:00">
+			<location lat="48.57442" lon="7.759">
+				<name alt="parvis de la médiathèque André Malraux">scène culture urbaine</name>
+				<description></description>
+			</location>
+		</live>
+	</band>	
+	<band>
+		<name>NLR / RimX / Paco</name>
+		<genre>Rap</genre>
+		<description>Rappeur Strasbourgeois, NLR est auteur interprète depuis 7 ans. Déjà 5 projets a son actif, plusieurs Clips et 2 nouveaux projets en cours.
+		RimX : Rappeur Originaire de la Banlieue Strasbourgeoise, Rim.X affiche 8 ans de rap à son compteur.</description>
+		<live start="2013-06-21T18:30:00+02:00" end="2013-06-21T18:55:00+02:00">
+			<location lat="48.57442" lon="7.759">
+				<name alt="parvis de la médiathèque André Malraux">scène culture urbaine</name>
+				<description></description>
+			</location>
+		</live>
+	</band>	
+	<band>
+		<name>Makapens</name>
+		<genre>Dancehall</genre>
+		<description>Makapens est un  chanteur dancehall et hip hop originaire de Martinique</description>
+		<picture>
+			<description>Makapens</description>
+			<url>http://strasbourg.oyozik.com/live/makapens.jpg</url>
+			<dimension>
+				<width unit="px">4272</width>
+				<height unit="px">2848</height>
+			</dimension>
+		</picture>
+		<live start="2013-06-21T19:00:00+02:00" end="2013-06-21T19:20:00+02:00">
+			<location lat="48.57442" lon="7.759">
+				<name alt="parvis de la médiathèque André Malraux">scène culture urbaine</name>
+				<description></description>
+			</location>
+		</live>
+	</band>	
+	<band>
+		<name>Danseurs Div'Style</name>
+		<genre>Danceurs</genre>
+		<description></description>
+		<live start="2013-06-21T19:20:00+02:00" end="2013-06-21T19:30:00+02:00">
+			<location lat="48.57442" lon="7.759">
+				<name alt="parvis de la médiathèque André Malraux">scène culture urbaine</name>
+				<description></description>
+			</location>
+		</live>
+	</band>	
+	<band url="http://www.youtube.com/watch?v=tr7b6XbSWUg">
+		<name>Onirik</name>
+		<genre>Rap</genre>
+		<description>Onirik, un artiste qui sait jongler entre acoustique et punchlines, entre évasion et mélancolie, entre réel et imaginaire. Son EP ''Première Lueur'' sortie fin 2012 est une belle présentation de son univers, on a aussi beaucoup entendu parlé de lui grâce au buzz qu'a pu susciter le titre ''Surprise Shy'm''.</description>
+		<live start="2013-06-21T19:30:00+02:00" end="2013-06-21T19:55:00+02:00">
+			<location lat="48.57442" lon="7.759">
+				<name alt="parvis de la médiathèque André Malraux">scène culture urbaine</name>
+				<description></description>
+			</location>
+		</live>
+	</band>	
+	<band url="http://www.youtube.com/watch?v=bZDjkIV1XrE">
+		<name>Jay Dreamin</name>
+		<genre>Rap</genre>
+		<description>Son premier EP "MONSIEUR DREAMIN" sort le 29 Mai, en téléchargement gratuit. L'artiste fait parti d'un label nommé "MONSTA x BEAUTIFUL MONSTA" où il est le premier à y représenter le rap !</description>
+		<live start="2013-06-21T20:00:00+02:00" end="2013-06-21T20:25:00+02:00">
+			<location lat="48.57442" lon="7.759">
+				<name alt="parvis de la médiathèque André Malraux">scène culture urbaine</name>
+				<description></description>
+			</location>
+		</live>
+	</band>	
+	<band>
+		<name>Start</name>
+		<genre>Danseuses</genre>
+		<description>START c'est un jeune groupe de 4 danseuses aux styles différents réunies par la même passion: la danse ragga dancehall.</description>
+		<picture>
+			<description>Start</description>
+			<url>http://strasbourg.oyozik.com/live/start.jpg</url>
+			<dimension>
+				<width unit="px">720</width>
+				<height unit="px">720</height>
+			</dimension>
+		</picture>
+		<live start="2013-06-21T20:30:00+02:00" end="2013-06-21T20:40:00+02:00">
+			<location lat="48.57442" lon="7.759">
+				<name alt="parvis de la médiathèque André Malraux">scène culture urbaine</name>
+				<description></description>
+			</location>
+		</live>
+	</band>
+	<band>
+		<name>Skunkhead</name>
+		<genre>Dancehall</genre>
+		<description></description>
+		<live start="2013-06-21T20:40:00+02:00" end="2013-06-21T21:05:00+02:00">
+			<location lat="48.57442" lon="7.759">
+				<name alt="parvis de la médiathèque André Malraux">scène culture urbaine</name>
+				<description></description>
+			</location>
+		</live>
+	</band>
+	<band url="https://www.youtube.com/watch?v=w5EFJqSiyuE">
+		<name>Mess Bass</name>
+		<genre>Rap</genre>
+		<description>Mess Bass, jeune artiste de la scène strasbourgeoise, décide de se lancer dans la musique en 2005. Conscient du travail à fournir pour percer dans ce milieu, il a su s'entourer et n'a eu de cesse d'enchainer les projets. Un phrasé hors du commun et une certaine folie lyricale.</description>
+		<live start="2013-06-21T21:10:00+02:00" end="2013-06-21T21:35:00+02:00">
+			<location lat="48.57442" lon="7.759">
+				<name alt="parvis de la médiathèque André Malraux">scène culture urbaine</name>
+				<description></description>
+			</location>
+		</live>
+	</band>
+	<band>
+		<name>Camille / Soulchild</name>
+		<genre>Soul / R'n B</genre>
+		<description></description>
+		<live start="2013-06-21T21:40:00+02:00" end="2013-06-21T22:05:00+02:00">
+			<location lat="48.57442" lon="7.759">
+				<name alt="parvis de la médiathèque André Malraux">scène culture urbaine</name>
+				<description></description>
+			</location>
+		</live>
+	</band>	
+	<band url="https://www.youtube.com/watch?feature=player_embedded&amp;v=y5vLGav3TGs#!">
+		<name>B Jackson</name>
+		<genre>Danseur</genre>
+		<description>Bruno Jackson, sosie danseur-interprète de Michael Jackson, est un artiste à découvrir. Du haut de ses 26 ans, originaire de Strasbourg, il commença à danser très tôt. Des inspirations de Jackson à James Brown, en passant par Fred Astaire.</description>
+		<live start="2013-06-21T22:05:00+02:00" end="2013-06-21T22:15:00+02:00">
+			<location lat="48.57442" lon="7.759">
+				<name alt="parvis de la médiathèque André Malraux">scène culture urbaine</name>
+				<description></description>
+			</location>
+		</live>
+	</band>	
+	<band>
+		<name>Rhum One</name>
+		<genre>Beat Box</genre>
+		<description></description>
+		<live start="2013-06-21T22:15:00+02:00" end="2013-06-21T22:25:00+02:00">
+			<location lat="48.57442" lon="7.759">
+				<name alt="parvis de la médiathèque André Malraux">scène culture urbaine</name>
+				<description></description>
+			</location>
+		</live>
+	</band>	
+	<band>
+		<name>DJ Swa &amp; DJ Talri</name>
+		<genre>DJ</genre>
+		<description></description>
+		<live start="2013-06-21T22:30:00+02:00" end="2013-06-21T23:00:00+02:00">
+			<location lat="48.57442" lon="7.759">
+				<name alt="parvis de la médiathèque André Malraux">scène culture urbaine</name>
+				<description></description>
+			</location>
+		</live>
+	</band>	
+	<band>
+		<name>Dj Mistikal Kut</name>
+		<genre>DJ</genre>
+		<description></description>
+		<live start="2013-06-21T23:00:00+02:00" end="2013-06-21T23:30:00+02:00">
+			<location lat="48.57442" lon="7.759">
+				<name alt="parvis de la médiathèque André Malraux">scène culture urbaine</name>
+				<description></description>
+			</location>
+		</live>
+	</band>	
+	<band url="http://www.youtube.com/watch?v=fUDiXoJNVxY">
+		<name>Dj T.Killa &amp; Mc Baya</name>
+		<genre>DJ</genre>
+		<description>Dj depuis 1998, il forme avec Dj Nelson, l'association « Turntableast » qui depuis 2003, agite tout Strasbourg par ses nombreuses soirées et évènements.</description>
+		<picture>
+			<description>Dj T.Killa &amp; Mc Baya</description>
+			<url>http://strasbourg.oyozik.com/live/dj-t-killa.jpg</url>
+			<dimension>
+				<width unit="px">720</width>
+				<height unit="px">483</height>
+			</dimension>
+		</picture>
+		<live start="2013-06-21T23:30:00+02:00" end="2013-06-22T00:00:00+02:00">
+			<location lat="48.57442" lon="7.759">
+				<name alt="parvis de la médiathèque André Malraux">scène culture urbaine</name>
+				<description></description>
+			</location>
+		</live>
+	</band>	
+	<band url="http://doinjustfine.bandcamp.com/">
+		<name>ACEL 67</name>
+		<genre>Pop Rock</genre>
+		<description>Venez à la rencontre des groupes ONE SHOT BLUES BAND, mélange de blues-rock traditionnel et moderne, et THE HITCHHIKERS : des passionnés guidés par un bolide mélodique.</description>
+		<live start="2013-06-21T18:00:00+02:00" end="2013-06-22T00:30:00+02:00">
+			<location lat="48.57967" lon="7.75667">
+				<name alt="place de Zurich">scène Partenaire</name>
+				<description></description>
+			</location>
+		</live>
+	</band>
+	<band url="http://www.adncrew.fr">
+		<name>ADN Crew</name>
+		<genre>Electro progressif</genre>
+		<description>Les musiques électroniques fêtent leurs 20 ans. Pour la 14ème année l'association ADNCREW vous invite "for the sound" sur le dancefloor de la place des Meuniers. DJ Melchy - DJ Clu - DJ Randal et pour finir DJ Styv !</description>
+		<picture>
+			<description>ADN Crew</description>
+			<url>http://strasbourg.oyozik.com/live/adn-crew.jpg</url>
+			<dimension>
+				<width unit="px">2480</width>
+				<height unit="px">1181</height>
+			</dimension>
+		</picture>		
+		<live start="2013-06-21T18:00:00+02:00" end="2013-06-22T00:30:00+02:00">
+			<location lat="48.58173" lon="7.75883">
+				<name alt="place des Meuniers">scène Partenaire</name>
+				<description></description>
+			</location>
+		</live>
+	</band>
+	<band>
+		<name>ADEAC</name>
+		<genre>Jamaïca Sound System</genre>
+		<description>L'association ADEAC va faire danser aux rythmes entrainants du Jamaica Sound System avec notamment la présence de Ras-du-dimussani.</description>
+		<live start="2013-06-21T18:00:00+02:00" end="2013-06-22T00:30:00+02:00">
+			<location lat="48.5822" lon="7.734">
+				<name alt="faubourg national">scène Partenaire</name>
+				<description></description>
+			</location>
+		</live>
+	</band>		
+	<band>
+		<name>TAPAZE</name>
+		<genre>Musique des Iles</genre>
+		<description>Venez découvrir les îles de l'océan indien au travers des danses et de la musique qui rythme l'île Maurice. Animation musicale par Irwin Dijay, Groupe Nissa, accompagnés de danseuses. Venez vous aussi découvrir dans un esprit festif la culture musicale de l'océan indien.</description>
+		<picture>
+			<description>TAPAZE</description>
+			<url>http://strasbourg.oyozik.com/live/tapaze.jpg</url>
+			<dimension>
+				<width unit="px">831</width>
+				<height unit="px">474</height>
+			</dimension>
+		</picture>	
+		<live start="2013-06-21T18:00:00+02:00" end="2013-06-22T00:30:00+02:00">
+			<location lat="48.57817" lon="7.75333">
+				<name alt="place d'Austerlitz">scène Partenaire</name>
+				<description></description>
+			</location>
+		</live>
+	</band>	
+	<band url="http://www.youtube.com/watch?v=t-eSu5FEiZU">
+		<name>KIZOMBA DOCE</name>
+		<genre>Afro-lusophone</genre>
+		<description>Démonstration de Kizomba/Semba par les élèves de l'association - Initiation à la  « Kizomba » - Animation de Kuduro - Animation Afro-house sur une chorégraphie improvisée avec le public - Animation tout au long de la soirée par un DJ - Spécialités culinaires Afro-lusophone</description>
+		<picture>
+			<description>KIZOMBA DOCE</description>
+			<url>http://strasbourg.oyozik.com/live/kizomba-doce.jpg</url>
+			<dimension>
+				<width unit="px">820</width>
+				<height unit="px">738</height>
+			</dimension>
+		</picture>	
+		<live start="2013-06-21T18:00:00+02:00" end="2013-06-22T00:30:00+02:00">
+			<location lat="48.58342" lon="7.75475">
+				<name alt="place St Etienne">scène Partenaire</name>
+				<description></description>
+			</location>
+		</live>
+	</band>
+	<band>
+		<name>LES JETS</name>
+		<genre>Rock</genre>
+		<description>Les JETS reviennent pour le plus grand plaisir des amateurs des Shadows. Rock et blues garantis.</description>
+		<live start="2013-06-21T18:00:00+02:00" end="2013-06-22T00:30:00+02:00">
+			<location lat="48.58075" lon="7.73983">
+				<name alt="square Louise Weiss">scène Partenaire</name>
+				<description></description>
+			</location>
+		</live>
+	</band>
+	<band url="http://www.beardbounce.com/">
+		<name>BEAR'D BOUNCE</name>
+		<genre>Electro</genre>
+		<description>Jeune label de la scène électro strasbourgeoise, Bear'd Bounce présence une line de 3 DJs du label : ARP, KIDWAX et HEADING FOR A HEARTBREAK</description>
+		<live start="2013-06-21T18:00:00+02:00" end="2013-06-22T00:30:00+02:00">
+			<location lat="48.58017" lon="7.75452">
+				<name alt="place Ste Madeleine">scène Partenaire</name>
+				<description></description>
+			</location>
+		</live>
+	</band>
+	<band url="http://soundcloud.com/antipod6tem">
+		<name>ANTIPOD</name>
+		<genre>Hip Hop Dub</genre>
+		<description>Organisateur de soirées hip-hop, dub et drum n' bass depuis 2005, le crew Antipod est avant tout un collectif de dj's et producteurs. C'est donc tout naturellement que le label Antipod Records a vu le jour en 2012. En live comme en studio Antipod reste actif plus que jamais sur la scène alternative!</description>
+		<picture>
+			<description>ANTIPOD</description>
+			<url>http://strasbourg.oyozik.com/live/antipod.jpg</url>
+			<dimension>
+				<width unit="px">902</width>
+				<height unit="px">635</height>
+			</dimension>
+		</picture>	
+		<live start="2013-06-21T18:00:00+02:00" end="2013-06-22T00:30:00+02:00">
+			<location lat="48.585" lon="7.7615">
+				<name alt="place de l'université">scène Partenaire</name>
+				<description></description>
+			</location>
+		</live>
+	</band>	
+	<band url="https://soundcloud.com/vox-copuli">
+		<name>RECTO VERSO</name>
+		<genre>Musique du Monde</genre>
+		<description>Recto Verso et Sleediz s'unissent pour cette occasion unique et vous proposeront une sélection musicale éclectique! De la chanson au Jazz et des rythmes ancestraux, nous porterons ensuite la fête sur l'ambiance résolument clubbing, festive et décontracté qui font la fameuse formule du Dirty Safari</description>
+		<picture>
+			<description>RECTO VERSO</description>
+			<url>http://strasbourg.oyozik.com/live/recto-verso.jpg</url>
+			<dimension>
+				<width unit="px">1247</width>
+				<height unit="px">1749</height>
+			</dimension>
+		</picture>	
+		<live start="2013-06-21T18:00:00+02:00" end="2013-06-22T00:30:00+02:00">
+			<location lat="48.5805" lon="7.75033">
+				<name alt="rue du vieil Hôpital">scène Partenaire</name>
+				<description></description>
+			</location>
+		</live>
+	</band>
+	<band url="http://www.mixcloud.com/RadioCapsule/allo-houston-001-par-juliano-01-fevrier-2013/">
+		<name>ART RHYTHMS</name>
+		<genre>Minimal House</genre>
+		<description>Venez retrouver le collectif Art Rhythms place Matthias Mérian pour la fêtes de la musique 2013. Minimal, House, Techouse, Techno seront a l'honneur avec les piliers de la scène underground strasbourgeoise. Line up : Miss Flora, Flo Vilano, Mister Natasha, Juliano</description>
+		<picture>
+			<description>ART RHYTHMS</description>
+			<url>http://strasbourg.oyozik.com/live/art-rhythm-s.jpg</url>
+			<dimension>
+				<width unit="px">1191</width>
+				<height unit="px">1767</height>
+			</dimension>
+		</picture>			
+		<live start="2013-06-21T18:00:00+02:00" end="2013-06-22T00:30:00+02:00">
+			<location lat="48.58233" lon="7.75417">
+				<name alt="place Mathias Merian">scène Partenaire</name>
+				<description></description>
+			</location>
+		</live>
+	</band>
+	<band>
+		<name>BAR LE QG</name>
+		<genre>DJ</genre>
+		<description>DJ Taskam animera la place du Marché Gayot.</description>
+		<live start="2013-06-21T18:00:00+02:00" end="2013-06-22T00:30:00+02:00">
+			<location lat="48.58262" lon="7.75318">
+				<name alt="place du marché Gayot">scène Partenaire</name>
+				<description></description>
+			</location>
+		</live>
+	</band>	
+	<band>
+		<name>Direction de proximité Robertsau - Quartier des XV</name>
+		<genre></genre>
+		<description>Retrouvez de 16h30 à 21h00 le centre d'éducation musical de la Robertsau (groupe de guitares électriques), l'école de musique et l'orchestre de l'Harmonie Caecilia, ainsi que les Accordéons de l'Ill.</description>
+		<live start="2013-06-21T18:00:00+02:00" end="2013-06-22T00:30:00+02:00">
+			<location lat="48.60258" lon="7.78417">
+				<name alt="square de la Petite Orangerie">scène Partenaire</name>
+				<description></description>
+			</location>
+		</live>
+	</band>	
+	<band url="http://www.coldstone.fr">
+		<name>COLDSTONE</name>
+		<genre>Rock Blues</genre>
+		<description>Coldstone productions présente à la place de la grande boucherie: 19h00-20h00 Drunken Storks reprises (pop&amp;rock) / 20h15-21h15 Rusted Cans compos et reprises (Rock&amp;Blues), 21h30-22h45 Coldstone compos (Heavy-Rock) coldstone.fr, 23h00-00h30 Rusted Cans &amp; boeuf session.</description>
+		<picture>
+			<description>COLDSTONE</description>
+			<url>http://strasbourg.oyozik.com/live/coldstone.jpg</url>
+			<dimension>
+				<width unit="px">547</width>
+				<height unit="px">768</height>
+			</dimension>
+		</picture>	
+		<live start="2013-06-21T18:00:00+02:00" end="2013-06-22T00:30:00+02:00">
+			<location lat="48.58017" lon="7.7511">
+				<name alt="rue de la Grande Boucherie">scène Partenaire</name>
+				<description></description>
+			</location>
+		</live>
+	</band>
+	<band>
+		<name>Direction de proximité - Cronenbourg Hautepierre</name>
+		<genre></genre>
+		<description>Les écoles et  associations de Cronenbourg viennent chanter au square St Florent entre 14H et 21H</description>
+		<live start="2013-06-21T18:00:00+02:00" end="2013-06-22T00:30:00+02:00">
+			<location lat="48.5945" lon="7.72177">
+				<name alt="square St Florent">scène Partenaire</name>
+				<description></description>
+			</location>
+		</live>
+	</band>	
+	<band>
+		<name>Café de l'Opéra</name>
+		<genre></genre>
+		<description>Le Café de l'Opéra et SauceCubaine proposent une animation Salsa. Au programme dès 18h30 : initiation à la salsa cubaine et au Kuduro puis place aux Djs TIMBALERO et HIELO</description>
+		<live start="2013-06-21T18:00:00+02:00" end="2013-06-22T00:30:00+02:00">
+			<location lat="48.58567" lon="7.75192">
+				<name alt="place Broglie">scène Partenaire</name>
+				<description></description>
+			</location>
+		</live>
+	</band>	
+	<band>
+		<name>Association vie de quartier</name>
+		<genre></genre>
+		<description>Au programme de ce programme tourné vers les habitants du quartier : du jazz, du flamenco, de la musique du monde et des chorales.</description>
+		<live start="2013-06-21T18:00:00+02:00" end="2013-06-21T22:00:00+02:00">
+			<location lat="48.58467" lon="7.76967">
+				<name alt="place Arnold">scène Partenaire</name>
+				<description></description>
+			</location>
+		</live>
+	</band>	
+	<band>
+		<name>Maison Mimir</name>
+		<genre></genre>
+		<description>L'association Mimir vous attend devant la maison Mimir pour une scène « instrumentale » et à l'intérieur pour une soirée électro.</description>
+		<live start="2013-06-21T18:00:00+02:00" end="2013-06-22T00:30:00+02:00">
+			<location lat="48.58292" lon="7.75883">
+				<name alt="rue Prechter"></name>
+				<description></description>
+			</location>
+		</live>
+	</band>
+</lineup>
