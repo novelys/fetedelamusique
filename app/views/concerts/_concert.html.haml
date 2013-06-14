@@ -1,0 +1,7 @@
+%li.concert
+  %p.artist= concert.artist
+  %p.schedule= "De #{ concert.time_start.strftime("%H:%M") } à #{ concert.time_end.strftime("%H:%M") }"
+  = concert_venue(concert)
+  = image_tag concert.photo.url(:small) if concert.photo.file?
+  %p= concert.description
+  = link_to "Site web de l'artiste", concert.artist_url, target: "_blank"

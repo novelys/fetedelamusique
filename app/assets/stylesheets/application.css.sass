@@ -1,5 +1,5 @@
+// = require normalize
 // = require_self
-// = require_tree .
 
 html
   height: 100%
@@ -7,7 +7,52 @@ html
 body
   height: 100%
   margin: 0
-  paddig: 0
+  padding: 0
+  padding-top: 58px
+  font-family: 'Open Sans', sans-serif
+  color: #282828
+
+nav
+  text-align: center
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  height: 58px
+  background-color: #68009b
+  img
+    max-height: 56px
+
+p
+  padding: 0
+  margin: 0
+  margin-bottom: 5px
+  &.schedule
+    font-style: italic
+  &.artist
+    font-weight: bold
+    font-size: 14px
+    line-height: 18px
+
+a, a:hover, a:visited
+  color: #68009b
+
+strong
+  padding-bottom: 5px
+
+ul
+  padding: 0
+  margin: 0
+
+ul.unstyled
+  list-style: none outside none
 
 #map
   height: 100%
+
+.concert
+  font-size: 12px
+  line-height: 14px
+  color: #282828
+  margin-bottom: 20px
+

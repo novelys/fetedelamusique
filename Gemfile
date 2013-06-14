@@ -48,6 +48,7 @@ gem 'pry-nav', group: [:development]
 
 gem 'mongoid', github: 'mongoid/mongoid'
 gem 'mongoid-paperclip', :require => 'mongoid_paperclip'
+gem 'fog'
 gem 'geocoder', github: 'alexreisner/geocoder'
 
 gem 'nokogiri'
