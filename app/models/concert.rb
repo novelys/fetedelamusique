@@ -1,6 +1,7 @@
 class Concert
   include Mongoid::Document
   include Mongoid::Timestamps
+  include Geocoder::Model::Mongoid
 
   field :artist, type: String
   field :artist_url, type: String, default: nil
@@ -14,9 +15,15 @@ class Concert
 
   field :coordinates, type: Array
 
+  reverse_geocoded_by :coordinates
+
   index({ coordinates: "2d" }, { min: -200, max: 200 })
 
   validates_presence_of :artist, :time_start, :time_end
+
+  def concert_id
+    id.to_s
+  end
 
   def self.load_official_concerts
     f = File.open("doc/strasbourg-fete-de-la-musique-2013.xml")
@@ -29,7 +36,7 @@ class Concert
 
       live_node = band_node.xpath("live").first
       location_node = band_node.xpath("live/location").first
-      coordinates = [ location_node["lon"], location_node["lat"] ]
+      coordinates = [ location_node["lon"].to_f, location_node["lat"].to_f ]
 
       if (loc = location_node.xpath("name").first.content).present?
         venue = loc

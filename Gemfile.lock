@@ -1,4 +1,10 @@
 GIT
+  remote: git://github.com/alexreisner/geocoder.git
+  revision: 2c0d0e78c8696e09c8a45e0bc6398e26ba58fe08
+  specs:
+    geocoder (1.1.8)
+
+GIT
   remote: git://github.com/mongoid/mongoid.git
   revision: c3da4971f7dbf7aefe894c4e50ab831be228f7a3
   specs:
@@ -140,6 +146,7 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails (~> 4.0.0)
+  geocoder!
   haml-rails
   jbuilder (~> 1.2)
   jquery-rails

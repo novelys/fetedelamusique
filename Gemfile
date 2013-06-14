@@ -47,5 +47,6 @@ gem 'pry-rails', group: [:development]
 gem 'pry-nav', group: [:development]
 
 gem 'mongoid', github: 'mongoid/mongoid'
+gem 'geocoder', github: 'alexreisner/geocoder'
 
 gem 'nokogiri'
