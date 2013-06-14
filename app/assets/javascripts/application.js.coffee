@@ -10,5 +10,9 @@ $(document).ready ->
     zoom: 14
   )
 
-  center = new google.maps.LatLng(48.583148, 7.747882000000004)
-  map.setCenter center
+  map.setCenter(new google.maps.LatLng(48.583148, 7.747882000000004))
+
+  google.maps.event.addDomListener window, "resize", () ->
+    center = map.getCenter()
+    google.maps.event.trigger(map, "resize")
+    map.setCenter(center)
