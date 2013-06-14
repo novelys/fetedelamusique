@@ -31,12 +31,12 @@ module Fetedelamusique
       :fog_credentials => {
       :aws_access_key_id => ENV['AWS_ACCESS_KEY_ID'],
         :aws_secret_access_key => ENV['AWS_SECRET_ACCESS_KEY'],
-        :provider => 'AWS',
-        :region => 'eu-west-1'
+        :provider => ENV['FOG_PROVIDER'],
+        :region =>  ENV['FOG_REGION']
       },
       :fog_directory => ENV['S3_BUCKET_NAME'],
       :fog_file => {'Cache-Control' => 'max-age=315576000', 'Expires' => 1.years.from_now.httpdate},
-      :fog_host => "http://#{ ENV['S3_BUCKET_NAME'] }.s3.amazonaws.com",
+      :fog_host => "http://#{ ENV['FOG_DIRECTORY'] }.s3.amazonaws.com",
       :fog_public => true
     }
   end
