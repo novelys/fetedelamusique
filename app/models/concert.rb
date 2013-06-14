@@ -2,6 +2,7 @@ class Concert
   include Mongoid::Document
   include Mongoid::Timestamps
   include Geocoder::Model::Mongoid
+  include Mongoid::Paperclip
 
   field :artist, type: String
   field :artist_url, type: String, default: nil
@@ -14,6 +15,12 @@ class Concert
   field :venue_alt, type: String
 
   field :coordinates, type: Array
+
+  has_mongoid_attached_file :photo, {
+    styles: {
+      small: "320x240#"
+    }
+  }
 
   reverse_geocoded_by :coordinates
 
@@ -34,6 +41,7 @@ class Concert
 
     doc.xpath("//band").each{|band_node|
 
+      picture_url = band_node.xpath("picture/url").try(:first).try(:content)
       live_node = band_node.xpath("live").first
       location_node = band_node.xpath("live/location").first
       coordinates = [ location_node["lon"].to_f, location_node["lat"].to_f ]
@@ -55,7 +63,8 @@ class Concert
         venue: venue,
         venue_alt: venue_alt,
         time_start: live_node["start"],
-        time_end: live_node["end"]
+        time_end: live_node["end"],
+        photo: picture_url.blank? ? nil : URI.parse(picture_url)
       })
 
       concert.save!
