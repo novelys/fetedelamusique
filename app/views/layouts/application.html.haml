@@ -11,5 +11,6 @@
     = csrf_meta_tags
   %body
     %nav
-      = image_tag "logo_fete_de_la_musique.jpg"
+      = link_to "/" do
+        = image_tag "logo_fete_de_la_musique.jpg"
     = yield
