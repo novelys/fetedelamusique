@@ -48,6 +48,7 @@ gem 'asset_sync'
 
 gem 'pry-rails', group: [:development]
 gem 'pry-nav', group: [:development]
+gem 'dotenv-rails', :groups => [:development, :test]
 
 gem 'mongoid', github: 'mongoid/mongoid'
 gem 'mongoid-paperclip', :require => 'mongoid_paperclip'

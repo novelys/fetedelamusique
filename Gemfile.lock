@@ -59,6 +59,9 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.6.2)
+    dotenv (0.8.0)
+    dotenv-rails (0.8.0)
+      dotenv (= 0.8.0)
     erubis (2.7.0)
     excon (0.6.6)
     execjs (1.4.0)
@@ -182,6 +185,7 @@ PLATFORMS
 DEPENDENCIES
   asset_sync
   coffee-rails (~> 4.0.0)
+  dotenv-rails
   fog
   geocoder!
   haml-rails
