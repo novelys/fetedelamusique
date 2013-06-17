@@ -17,7 +17,7 @@ window.loadVenues = () ->
           position: lat_lng
           map: window.map
           title: venue.name
-          icon: "music.png"
+          icon: "<%= asset_url 'music.png' %>"
         google.maps.event.addListener marker, 'click', () ->
           lat_lng = marker.getPosition()
           lat = lat_lng.lat()
