@@ -17,6 +17,7 @@ window.loadVenues = () ->
           position: lat_lng
           map: window.map
           title: venue.name
+          icon: "music.png"
         google.maps.event.addListener marker, 'click', () ->
           lat_lng = marker.getPosition()
           lat = lat_lng.lat()
@@ -31,9 +32,8 @@ window.loadVenues = () ->
             dataType: 'json',
             type: 'GET'
             success: (data, status, xhr) ->
-              infowindow = new google.maps.InfoWindow
-                content: data.body
-              infowindow.open(window.map, marker)
+              $("body").addClass("opened")
+              $(".concerts").html("").append(data.body)
 
 $(document).ready ->
 
