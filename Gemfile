@@ -56,3 +56,5 @@ gem 'fog'
 gem 'geocoder', github: 'alexreisner/geocoder'
 
 gem 'nokogiri'
+gem 'devise', :github => 'plataformatec/devise', :branch => 'rails4'
+gem 'rails_admin', github: 'sferik/rails_admin', :branch => 'rails-4'
