@@ -4,4 +4,4 @@
   = concert_venue(concert)
   = image_tag concert.photo.url(:small) if concert.photo.file?
   %p= concert.description
-  = link_to "Site web de l'artiste", concert.artist_url, target: "_blank"
+  = link_to "Site web de l'artiste", concert.artist_url, target: "_blank" if concert.artist_url.present?
