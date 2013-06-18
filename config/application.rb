@@ -22,9 +22,13 @@ module Fetedelamusique
     # config.time_zone = 'Central Time (US & Canada)'
     config.time_zone = 'Paris'
 
+    config.i18n.default_locale = :fr
+
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
+
+    config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
 
     config.paperclip_defaults = {
       :storage => :fog,

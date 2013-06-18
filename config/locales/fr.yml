@@ -1,0 +1,11 @@
+fr:
+  simple_form:
+    labels:
+      concert:
+        artist: "Nom de l'artiste, du groupe"
+        artist_url: "Site web"
+        genre: "Genre"
+        description: "Description"
+        venue: "Nom du lieu où aura lieu le concert"
+        time_start: "Date et heure de début"
+        time_start: "Date et heure de fin"

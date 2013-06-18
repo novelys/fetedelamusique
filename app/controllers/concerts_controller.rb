@@ -25,4 +25,16 @@ class ConcertsController < ApplicationController
   def show
   end
 
+  def new
+    @concert = Concert.new
+  end
+
+  def create
+    @concert = Concert.new params[:concert]
+
+    @concert.save
+
+    render :action => "new"
+  end
+
 end

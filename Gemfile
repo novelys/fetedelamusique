@@ -4,7 +4,7 @@ ruby '2.0.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0.rc2'
-
+gem 'rails-i18n'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0.rc2'
@@ -45,6 +45,10 @@ gem 'asset_sync'
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+gem 'bootstrap-sass'
+gem 'bootstrap-datetimepicker-rails'
+gem 'simple_form'
 
 gem 'pry-rails', group: [:development]
 gem 'pry-nav', group: [:development]

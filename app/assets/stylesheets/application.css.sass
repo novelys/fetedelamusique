@@ -1,8 +1,12 @@
-// = require normalize
 // = require_self
 
-html
-  height: 100%
+$linkColor: #68009B
+$linkColorHover: #68009B
+$sansFontFamily: 'Open Sans', sans-serif
+
+@import bootstrap
+@import font-awesome
+@import bootstrap-datetimepicker
 
 body
   height: 100%
@@ -12,6 +16,9 @@ body
   font-family: 'Open Sans', sans-serif
   color: #282828
   overflow-y: hidden
+
+h1
+  font-family: 'Open Sans', sans-serif
 
 .fill
   top: 58px
@@ -30,8 +37,23 @@ nav
   right: 0
   height: 58px
   background-color: #68009b
+  color: white
+  font-size: 32px
   img
     max-height: 56px
+  a, a:hover, a:visited
+    text-decoration: none
+  span
+    color: white
+    text-shadow: 5px 2px black
+  .marker
+    margin-left: 15px
+    margin-top: 12px
+    float: left
+  .add
+    margin-right: 15px
+    margin-top: 12px
+    float: right
 
 p
   padding: 0
@@ -115,3 +137,7 @@ body.opened
       height: 30%
       width: 100%
       float: none
+
+.container-narrow
+  max-width: 700px
+  margin: 0 auto

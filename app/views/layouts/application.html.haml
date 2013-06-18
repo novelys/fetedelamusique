@@ -9,7 +9,6 @@
     %meta{property: "og:image", content: asset_url("fb.png")}
     = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
     = stylesheet_link_tag "http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600italic,600,700,700italic,800,800italic"
-    = stylesheet_link_tag "http://netdna.bootstrapcdn.com/font-awesome/3.2.0/css/font-awesome.min.css"
     = javascript_include_tag "application", "data-turbolinks-track" => true
     - api_key = "AIzaSyDr7frVgm9VD5UvDnphSR3juK6G8JtiWNk"
     = javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=#{api_key}&sensor=false"
@@ -18,4 +17,8 @@
     %nav
       = link_to "/", class: "logo" do
         = image_tag "logo_fete_de_la_musique.jpg"
+      = link_to "#", class: "marker" do
+        %span.icon-map-marker
+      = link_to new_concert_path, class: "add" do
+        %span.icon-plus
     = yield
