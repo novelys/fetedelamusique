@@ -3,7 +3,12 @@ Fetedelamusique::Application.routes.draw do
   devise_for :admins
   mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
   #devise_for :users
-  resources :concerts
+  resources :concerts do
+    collection do
+      get 'thank_you'
+    end
+  end
+
   resources :venues
 
   root 'venues#index'
