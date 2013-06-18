@@ -1,11 +1,11 @@
 GIT
-  remote: git://github.com/alexreisner/geocoder.git
+  remote: https://github.com/alexreisner/geocoder
   revision: 2c0d0e78c8696e09c8a45e0bc6398e26ba58fe08
   specs:
     geocoder (1.1.8)
 
 GIT
-  remote: git://github.com/mongoid/mongoid.git
+  remote: https://github.com/mongoid/mongoid
   revision: c3da4971f7dbf7aefe894c4e50ab831be228f7a3
   specs:
     mongoid (4.0.0)
@@ -15,7 +15,7 @@ GIT
       tzinfo (~> 0.3.22)
 
 GIT
-  remote: git://github.com/plataformatec/devise.git
+  remote: https://github.com/plataformatec/devise
   revision: 6b5988d756d780903bf8c9ccb3e2b3b724ccebe8
   branch: rails4
   specs:
@@ -26,7 +26,7 @@ GIT
       warden (~> 1.2.1)
 
 GIT
-  remote: git://github.com/sferik/rails_admin.git
+  remote: https://github.com/sferik/rails_admin
   revision: 3a64340da87ab733525077dc78629dbc1f8322ef
   branch: rails-4
   specs:
@@ -45,6 +45,12 @@ GIT
       remotipart (~> 1.0)
       safe_yaml (~> 0.6)
       sass-rails (~> 4.0.0.rc2)
+
+GIT
+  remote: https://github.com/starchow/rails_admin-i18n
+  revision: a04f3793a526d13d45327128179a300723aa5686
+  specs:
+    rails_admin-i18n (0.0.9)
 
 GEM
   remote: https://rubygems.org/
@@ -263,6 +269,7 @@ DEPENDENCIES
   rails (= 4.0.0.rc2)
   rails-i18n
   rails_admin!
+  rails_admin-i18n!
   sass-rails (~> 4.0.0.rc2)
   sdoc
   simple_form

@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 ruby '2.0.0'
 
-# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+# Bundle edge Rails instead: gem 'rails', git: 'https://github.com/rails/rails'
 gem 'rails', '4.0.0.rc2'
 gem 'rails-i18n'
 
@@ -55,13 +55,13 @@ gem 'pry-rails', group: [:development]
 gem 'pry-nav', group: [:development]
 gem 'dotenv-rails', :groups => [:development, :test]
 
-gem 'mongoid', github: 'mongoid/mongoid'
+gem 'mongoid', git: 'https://github.com/mongoid/mongoid'
 gem 'mongoid-paperclip', :require => 'mongoid_paperclip'
 gem 'fog'
-gem 'geocoder', github: 'alexreisner/geocoder'
+gem 'geocoder', git: 'https://github.com/alexreisner/geocoder'
 
 gem 'nokogiri'
-gem 'devise', :github => 'plataformatec/devise', :branch => 'rails4'
-gem 'rails_admin', github: 'sferik/rails_admin', :branch => 'rails-4'
+gem 'devise', git: 'https://github.com/plataformatec/devise', :branch => 'rails4'
+gem 'rails_admin', git: 'https://github.com/sferik/rails_admin', :branch => 'rails-4'
 
-gem 'rails_admin-i18n', github: 'starchow/rails_admin-i18n'
+gem 'rails_admin-i18n', git: 'https://github.com/starchow/rails_admin-i18n'
