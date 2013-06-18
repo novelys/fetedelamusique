@@ -43,5 +43,7 @@ module Fetedelamusique
       :fog_host => ENV['FOG_HOST'].present? ? ENV['FOG_HOST'] : "http://#{ ENV['FOG_DIRECTORY'] }.s3.amazonaws.com",
       :fog_public => true
     }
+
+    config.action_dispatch.default_headers[:'X-Frame-Options'] = "SAMEORIGIN, ALLOW-FROM http://www.rue89strasbourg.com/"
   end
 end
