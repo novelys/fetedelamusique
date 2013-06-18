@@ -9,7 +9,31 @@
         = f.input :genre, input_html: { class: 'input-xxlarge' }
         = f.input :description, as: :text, input_html: { class: 'input-xxlarge' }
         = f.input :venue, input_html: { class: 'input-xxlarge' }
-        = f.input :time_start, as: :datetime
-        = f.input :time_end, as: :datetime
-        = f.button :submit, "Envoyer", :class => "btn btn-large btn-primary"
+        .control-field
+          = f.label :time_start, "Heure de début"
+          .input-append.date
+            = f.input_field :time_start, "data-format" => "dd/MM//yyyy hh:mm", "readonly" => "readonly", "value" => "06/21/2013 16:00"
+            %span.add-on
+              %i{"data-time-icon" => "icon-time", "data-date-icon" => "icon-calendar"}
+        .control-field
+          = f.label :time_end, "Heure de début"
+          .input-append.date
+            = f.input_field :time_end, "data-format" => "dd/MM/yyyy hh:mm", "readonly" => "readonly", "value" => "06/21/2013 17:00"
+            %span.add-on
+              %i{"data-time-icon" => "icon-time", "data-date-icon" => "icon-calendar"}
+        .form-actions
+          = f.button :submit, "Envoyer", :class => "btn btn-large btn-primary"
 
+:javascript
+  // 05 → June (January is 0)
+  dtps = $(".date").datetimepicker({
+    "maskInput": false,
+    "language": "fr-FR",
+    "pickSeconds": false,
+    "autoclose": true,
+    "startDate": new Date(2013, 5, 21, 18),
+    "endDate": new Date(2013, 5, 22, 10)
+  });
+
+  $(dtps[0]).data("datetimepicker").setLocalDate(new Date(2013,5,21,16));
+  $(dtps[1]).data("datetimepicker").setLocalDate(new Date(2013,5,21,17));
