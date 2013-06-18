@@ -2,7 +2,7 @@ class ConcertsController < ApplicationController
   def index
     if params[:lat].present? && params[:lng].present?
       coordinates = [params[:lat].to_f, params[:lng].to_f]
-      @concerts = Concert.displayed.near(coordinates, 0.010, :units => :km).sort_by(&:time_start)
+      @concerts = Concert.near(coordinates, 0.010, :units => :km).displayed.sort_by(&:time_start)
     else
       @concerts = Concert.displayed.all
     end
