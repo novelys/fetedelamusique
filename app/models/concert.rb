@@ -10,6 +10,7 @@ class Concert
   field :time_start, type: Time
   field :time_end, type: Time
   field :is_official, type: Boolean, default: false
+  field :is_validated, type: Boolean, default: false
   field :description, type: String, default: nil
   field :venue, type: String
   field :venue_alt, type: String
@@ -27,6 +28,8 @@ class Concert
   index({ coordinates: "2d" }, { min: -200, max: 200 })
 
   validates_presence_of :artist, :time_start, :time_end
+
+  scope :official_or_validated, any_of({is_official: true}, {is_validated: true})
 
   def concert_id
     id.to_s

@@ -5,7 +5,7 @@ class VenuesController < ApplicationController
     respond_to do |format|
       format.html
       format.json {
-        concerts = Concert.all
+        concerts = Concert.official_or_validated.all
 
         venues = concerts.uniq{|concert| concert.coordinates.to_a}.inject([]) {|memo, concert|
           hsh = {
@@ -20,7 +20,7 @@ class VenuesController < ApplicationController
         render :json => venues.to_json
       }
       format.xml {
-        @concerts = Concert.all
+        @concerts = Concert.official_or_validated.all
 
         render :xml => @concerts.to_xml
       }
