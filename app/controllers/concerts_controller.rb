@@ -29,8 +29,11 @@ class ConcertsController < ApplicationController
     if !@concert.save
       render :action => "new"
     else
-      redirect_to root_path
+      redirect_to thank_you_concerts_path
     end
+  end
+
+  def thank_you
   end
 
   protected
