@@ -54,6 +54,7 @@ gem 'simple_form'
 gem 'pry-rails', group: [:development]
 gem 'pry-nav', group: [:development]
 gem 'dotenv-rails', :groups => [:development, :test]
+gem 'airbrake'
 
 gem 'mongoid', git: 'https://github.com/mongoid/mongoid'
 gem 'mongoid-paperclip', :require => 'mongoid_paperclip'
@@ -63,5 +64,4 @@ gem 'geocoder', git: 'https://github.com/alexreisner/geocoder'
 gem 'nokogiri'
 gem 'devise', git: 'https://github.com/plataformatec/devise', :branch => 'rails4'
 gem 'rails_admin', git: 'https://github.com/sferik/rails_admin', :branch => 'rails-4'
-
 gem 'rails_admin-i18n', git: 'https://github.com/starchow/rails_admin-i18n'

@@ -79,6 +79,10 @@ GEM
       multi_json (~> 1.3)
       thread_safe (~> 0.1)
       tzinfo (~> 0.3.37)
+    airbrake (3.1.12)
+      activesupport
+      builder
+      json
     arel (4.0.0)
     asset_sync (0.5.4)
       activemodel
@@ -248,6 +252,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  airbrake
   asset_sync
   bootstrap-datetimepicker-rails
   bootstrap-sass
