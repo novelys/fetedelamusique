@@ -16,7 +16,7 @@ class Concert
   field :venue_alt, type: String
   field :contact_email, type: String
 
-  field :coordinates, type: Array
+  field :coordinates, type: Array, default: nil
 
   has_mongoid_attached_file :photo, {
     styles: {
@@ -28,9 +28,11 @@ class Concert
 
   index({ coordinates: "2d" }, { min: -200, max: 200 })
 
-  validates_presence_of :artist, :time_start, :time_end
+  validates_presence_of :artist, :time_start, :time_end, :coordinates
 
   scope :displayed, where(:coordinates.exists => true).any_of({is_official: true}, {is_validated: true})
+
+  attr_accessor :lat, :lng
 
   def concert_id
     id.to_s

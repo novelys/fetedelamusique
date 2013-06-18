@@ -25,6 +25,7 @@ class ConcertsController < ApplicationController
 
   def create
     @concert = Concert.new create_params
+    @concert.coordinates = create_coordinates
 
     if @concert.save
       render :action => "thank_you"
@@ -40,5 +41,9 @@ class ConcertsController < ApplicationController
 
   def create_params
     params.require(:concert).permit(:artist, :artist_url, :genre, :description, :venue, :time_start, :time_end, :photo)
+  end
+
+  def create_coordinates
+    params.permit(:lat, :lng).values.delete_if(&:blank?).reverse.map(&:to_f)
   end
 end

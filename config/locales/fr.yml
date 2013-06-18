@@ -13,4 +13,5 @@ fr:
         contact_email: "Email de contact"
     hints:
       concert:
-        contact_email: 'Au cas où nous aurions besoin de vous recontacter'
+        contact_email: 'Au cas où nous aurions besoin de vous recontacter.'
+        venue: 'Veuillez entrer une adresse et attendre que le marqueur soit présent sur la carte.'

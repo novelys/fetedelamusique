@@ -1,5 +1,6 @@
 #= require jquery
 #= require jquery_ujs
+#= require jquery.geocomplete
 #= require turbolinks
 #= require jquery.turbolinks
 #= require bootstrap
@@ -46,16 +47,17 @@ window.loadVenues = () ->
 
 $(document).ready ->
 
-  window.map = new google.maps.Map(document.getElementById("map"),
-    mapTypeId: google.maps.MapTypeId.TERRAIN
-    zoom: 14
-  )
+  if $("#map").length > 0
 
-  window.map.setCenter(new google.maps.LatLng(48.583148, 7.747882000000004))
+    window.map = new google.maps.Map(document.getElementById("map"),
+      mapTypeId: google.maps.MapTypeId.TERRAIN
+      zoom: 14
+    )
 
-  google.maps.event.addDomListener window, "resize", () ->
-    center = window.map.getCenter()
-    google.maps.event.trigger(window.map, "resize")
-    window.map.setCenter(center)
+    window.map.setCenter(new google.maps.LatLng(48.583148, 7.747882000000004))
 
-  window.loadVenues()
+    google.maps.event.addDomListener window, "resize", () ->
+      center = window.map.getCenter()
+      google.maps.event.trigger(window.map, "resize")
+      window.map.setCenter(center)
+

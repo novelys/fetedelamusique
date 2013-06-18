@@ -1,14 +1,21 @@
 .container-narrow
   .row-fluid
     .span12
-      %h1 Ajouter un nouveau concert
       = simple_form_for(@concert, :html => {:class => 'form-horizontal' }) do |f|
+        .control-group
+          .controls
+            %h1 Ajouter un nouveau concert
         = f.error_notification
+        = hidden_field_tag :lat
+        = hidden_field_tag :lng
         = f.input :artist, input_html: { class: 'input-xxlarge' }
         = f.input :artist_url, input_html: { class: 'input-xxlarge' }
         = f.input :genre, input_html: { class: 'input-xxlarge' }
         = f.input :description, as: :text, input_html: { class: 'input-xxlarge' }
         = f.input :venue, input_html: { class: 'input-xxlarge' }
+        .control-group
+          .controls
+            .map_preview{style: "displa:block;width:400px;height:400px;padding:20px;"}
         = f.input :photo
         = f.input :contact_email, input_html: { class: 'input-xxlarge' }
         .control-group
@@ -28,16 +35,29 @@
         .form-actions
           = f.button :submit, "Envoyer", :class => "btn btn-large btn-primary"
 
-:javascript
-  // 05 → June (January is 0)
-  dtps = $(".date").datetimepicker({
-    "maskInput": false,
-    "language": "fr-FR",
-    "pickSeconds": false,
-    "autoclose": true,
-    "startDate": new Date(2013, 5, 21, 18),
-    "endDate": new Date(2013, 5, 22, 10)
-  });
+- content_for :extra_js do
+  :javascript
+    $(document).ready(function() {
 
-  $(dtps[0]).data("datetimepicker").setLocalDate(new Date(2013,5,21,16));
-  $(dtps[1]).data("datetimepicker").setLocalDate(new Date(2013,5,21,17));
+      // 05 → June (January is 0)
+      dtps = $(".date").datetimepicker({
+        "maskInput": false,
+        "language": "fr-FR",
+        "pickSeconds": false,
+        "autoclose": true,
+        "startDate": new Date(2013, 5, 21, 18),
+        "endDate": new Date(2013, 5, 22, 10)
+      });
+
+      $(dtps[0]).data("datetimepicker").setLocalDate(new Date(2013,5,21,16));
+      $(dtps[1]).data("datetimepicker").setLocalDate(new Date(2013,5,21,17));
+
+      $("#concert_venue").geocomplete({
+        map: ".map_preview",
+        details: "form",
+        markerOptions: {
+          draggable: true
+        }
+      });
+
+    });

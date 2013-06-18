@@ -9,11 +9,8 @@
     %meta{property: "og:image", content: asset_url("fb.png")}
     = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
     = stylesheet_link_tag "http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600italic,600,700,700italic,800,800italic"
-    = javascript_include_tag "application", "data-turbolinks-track" => true
-    - api_key = "AIzaSyDr7frVgm9VD5UvDnphSR3juK6G8JtiWNk"
-    = javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=#{api_key}&sensor=false"
     = csrf_meta_tags
-  %body
+  %body{class: controller.controller_name == "venues" && controller.action_name == "index" && "homepage"}
     %nav
       = link_to "/", class: "logo" do
         = image_tag "logo_fete_de_la_musique.jpg"
@@ -22,6 +19,10 @@
       = link_to new_concert_path, class: "add" do
         %span.icon-plus
     = yield
+    = javascript_include_tag "application", "data-turbolinks-track" => true
+    - api_key = "AIzaSyDr7frVgm9VD5UvDnphSR3juK6G8JtiWNk"
+    = javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=#{api_key}&sensor=false&libraries=places"
+    = yield :extra_js
     :javascript
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
