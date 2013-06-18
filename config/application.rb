@@ -45,6 +45,6 @@ module Fetedelamusique
     }
 
     # config.action_dispatch.default_headers["X-Frame-Options"] = "SAMEORIGIN, ALLOW-FROM http://www.rue89strasbourg.com/"
-    config.action_dispatch.default_headers.delete("X-Frame-Options")
+    config.action_dispatch.default_headers.clear
   end
 end
