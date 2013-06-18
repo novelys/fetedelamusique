@@ -32,8 +32,13 @@ window.loadVenues = () ->
             dataType: 'json',
             type: 'GET'
             success: (data, status, xhr) ->
+              currCenter = window.map.getCenter()
               $("body").addClass("opened")
               $(".concerts").html("").append(data.body)
+              setTimeout(() ->
+                google.maps.event.trigger(window.map, 'resize')
+                window.map.setCenter(currCenter)
+              , 350)
 
 $(document).ready ->
 
