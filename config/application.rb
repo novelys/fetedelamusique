@@ -40,7 +40,7 @@ module Fetedelamusique
       },
       :fog_directory => ENV['FOG_DIRECTORY'],
       :fog_file => {'Cache-Control' => 'max-age=315576000', 'Expires' => 1.years.from_now.httpdate},
-      :fog_host => "http://#{ ENV['FOG_DIRECTORY'] }.s3.amazonaws.com",
+      :fog_host => ENV['FOG_HOST'].present? ? ENV['FOG_HOST'] : "http://#{ ENV['FOG_DIRECTORY'] }.s3.amazonaws.com",
       :fog_public => true
     }
   end
