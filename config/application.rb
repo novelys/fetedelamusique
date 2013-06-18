@@ -44,6 +44,8 @@ module Fetedelamusique
       :fog_public => true
     }
 
-    config.action_dispatch.default_headers[:'X-Frame-Options'] = "SAMEORIGIN, ALLOW-FROM http://www.rue89strasbourg.com/"
+    binding.pry
+
+    config.action_dispatch.default_headers["X-Frame-Options"] = "SAMEORIGIN, ALLOW-FROM http://www.rue89strasbourg.com/"
   end
 end
