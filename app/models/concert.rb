@@ -29,7 +29,7 @@ class Concert
 
   validates_presence_of :artist, :time_start, :time_end
 
-  scope :official_or_validated, any_of({is_official: true}, {is_validated: true})
+  scope :displayed, where(:coordinates.exists => true).any_of({is_official: true}, {is_validated: true})
 
   def concert_id
     id.to_s
