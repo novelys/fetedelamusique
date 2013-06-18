@@ -14,6 +14,7 @@ class Concert
   field :description, type: String, default: nil
   field :venue, type: String
   field :venue_alt, type: String
+  field :contact_email, type: String
 
   field :coordinates, type: Array
 

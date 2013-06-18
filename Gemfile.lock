@@ -26,6 +26,14 @@ GIT
       warden (~> 1.2.1)
 
 GIT
+  remote: https://github.com/plataformatec/simple_form
+  revision: 3df45ebff856c4a0d7653fa3b24442a3fe8f6c17
+  specs:
+    simple_form (3.0.0.rc)
+      actionpack (>= 4.0.0.rc1, < 4.1)
+      activemodel (>= 4.0.0.rc1, < 4.1)
+
+GIT
   remote: https://github.com/sferik/rails_admin
   revision: 3a64340da87ab733525077dc78629dbc1f8322ef
   branch: rails-4
@@ -221,7 +229,6 @@ GEM
     sdoc (0.3.20)
       json (>= 1.1.3)
       rdoc (~> 3.10)
-    simple_form (1.4.1)
     slop (3.4.5)
     sprockets (2.10.0)
       hike (~> 1.2)
@@ -277,6 +284,6 @@ DEPENDENCIES
   rails_admin-i18n!
   sass-rails (~> 4.0.0.rc2)
   sdoc
-  simple_form
+  simple_form!
   turbolinks
   uglifier (>= 1.3.0)

@@ -26,10 +26,10 @@ class ConcertsController < ApplicationController
   def create
     @concert = Concert.new create_params
 
-    if !@concert.save
-      render :action => "new"
+    if @concert.save
+      render :action => "thank_you"
     else
-      redirect_to thank_you_concerts_path
+      render :action => "new"
     end
   end
 
@@ -39,6 +39,6 @@ class ConcertsController < ApplicationController
   protected
 
   def create_params
-    params.require(:concert).permit(:artist, :artist_url, :genre, :description, :venue, :time_start, :time_end)
+    params.require(:concert).permit(:artist, :artist_url, :genre, :description, :venue, :time_start, :time_end, :photo)
   end
 end

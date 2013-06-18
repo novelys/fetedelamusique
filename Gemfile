@@ -49,7 +49,7 @@ gem 'asset_sync'
 
 gem 'bootstrap-sass'
 gem 'bootstrap-datetimepicker-rails'
-gem 'simple_form'
+gem 'simple_form', git: 'https://github.com/plataformatec/simple_form'
 
 gem 'pry-rails', group: [:development]
 gem 'pry-nav', group: [:development]

@@ -10,3 +10,7 @@ fr:
         time_start: "Date et heure de début"
         time_start: "Date et heure de fin"
         photo: "Photo"
+        contact_email: "Email de contact"
+    hints:
+      concert:
+        contact_email: 'Au cas où nous aurions besoin de vous recontacter'
