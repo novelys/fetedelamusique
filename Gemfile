@@ -62,3 +62,5 @@ gem 'geocoder', github: 'alexreisner/geocoder'
 gem 'nokogiri'
 gem 'devise', :github => 'plataformatec/devise', :branch => 'rails4'
 gem 'rails_admin', github: 'sferik/rails_admin', :branch => 'rails-4'
+
+gem 'rails_admin-i18n', github: 'starchow/rails_admin-i18n'
