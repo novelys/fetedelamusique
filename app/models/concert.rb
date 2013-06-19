@@ -34,6 +34,14 @@ class Concert
 
   attr_accessor :lat, :lng
 
+  after_validation do |concert|
+    if concert.is_validated == "1"
+      concert.is_validated = true
+    else
+      concert.is_validated = false
+    end
+  end
+    
   def concert_id
     id.to_s
   end
