@@ -107,9 +107,12 @@ aside.concerts_pane
   img
     max-width: 100%
   img.spinner
-    padding-top: 10px
-    padding-left: 10px
     max-width: none
+    position: relative
+    top: 50%
+    left: 50%
+    margin-left: -27px
+    margin-top: -27px
 
 aside.action_pane
   width: 0
@@ -201,15 +204,18 @@ body.opened
       float: none
 
     aside.action_pane
-      height: 10%
       width: 100%
+      height: 10%
       float: none
       color: white
       background-color: #68009b
-      text-align: center
-      font-size: 20px
-      padding-top: 8px
       a, a:hover, a:visited
         color: white
         text-decoration: none
-        width: 100%
+        position: relative
+        font-size: 20px
+        width: 100px
+        height: 30px
+        display: block
+        margin: 0 auto
+        padding-top: 5px
