@@ -39,13 +39,22 @@ window.loadVenues = () ->
             success: (data, status, xhr) ->
               currCenter = window.map.getCenter()
               $("body").addClass("opened")
-              $(".concerts").html("").append(data.body)
+              $(".concerts_pane").html("").append(data.body)
               setTimeout(() ->
                 google.maps.event.trigger(window.map, 'resize')
                 window.map.setCenter(currCenter)
               , 350)
 
 $(document).ready ->
+
+  $(".close_pane").on "click", (e) ->
+    e.preventDefault()
+    currCenter = window.map.getCenter()
+    $("body").removeClass("opened")
+    setTimeout(() ->
+      google.maps.event.trigger(window.map, 'resize')
+      window.map.setCenter(currCenter)
+    , 350)
 
   if $("#map").length > 0
 

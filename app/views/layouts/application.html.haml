@@ -9,11 +9,13 @@
     %meta{property: "og:image", content: asset_url("fb.png")}
     = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
     = stylesheet_link_tag "http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600italic,600,700,700italic,800,800italic"
+    = favicon_link_tag
     = csrf_meta_tags
   %body{class: controller.controller_name == "venues" && controller.action_name == "index" && "homepage"}
     %nav
       = link_to "/", class: "logo" do
-        = image_tag "logo_fete_de_la_musique.jpg"
+        = image_tag "logo_fete_de_la_musique.png", class: "hidden-phone"
+        = image_tag "logo_fete_de_la_musique_mini.png", class: "visible-phone"
       = link_to "#", class: "marker" do
         %span.icon-map-marker
       = link_to new_concert_path, class: "add" do

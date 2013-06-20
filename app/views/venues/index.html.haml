@@ -1,7 +1,10 @@
 .fill
-  %aside
-    .concerts
+  %aside.concerts_pane
   #map
+  %aside.action_pane
+    = link_to "#", class: "close_pane" do
+      Fermer
+      %span.icon-chevron-up
 
 - content_for :extra_js do
   :javascript

@@ -4,7 +4,7 @@ $linkColor: #68009B
 $linkColorHover: #68009B
 $sansFontFamily: 'Open Sans', sans-serif
 
-@import bootstrap
+@import bootstrap-responsive
 @import font-awesome
 @import bootstrap-datetimepicker
 
@@ -51,11 +51,11 @@ nav
     text-shadow: 5px 2px black
   .marker
     margin-left: 15px
-    margin-top: 12px
+    margin-top: 5px
     float: left
   .add
     margin-right: 15px
-    margin-top: 12px
+    margin-top: 5px
     float: right
 
 p
@@ -95,7 +95,7 @@ ul.unstyled
   img
     max-width: none
 
-aside
+aside.concerts_pane
   height: 100%
   width: 0%
   float: right
@@ -103,9 +103,15 @@ aside
   overflow-x: hidden
   transition: all 0.3s ease-in-out 0s
   .concerts
-    padding: 5px
+    margin: 10px
   img
     max-width: 100%
+
+aside.action_pane
+  width: 0
+  height: 0
+  a
+    text-shadow: 2px 2px black
 
 .concert
   font-size: 12px
@@ -120,32 +126,9 @@ body.opened
     height: 100%
     width: 70%
 
-  aside
+  aside.concerts_pane
     height: 100%
     width: 30%
-
-
-@media screen and (max-width: 767px)
-  #map
-    height: 100%
-    width: 100%
-    float: none
-
-  aside
-    height: 0%
-    width: 100%
-    float: none
-
-  body.opened
-    #map
-      height: 70%
-      width: 100%
-      float: none
-
-    aside
-      height: 30%
-      width: 100%
-      float: none
 
 .container-narrow
   max-width: 700px
@@ -156,3 +139,73 @@ body.opened
     margin-bottom: 0
   .help-block
     font-style: italic
+
+@media screen and (max-width: 767px)
+  nav
+    height: 50px
+    img
+      max-height: 48px
+    .marker
+      margin-left: 10px
+      margin-top: 1px
+    .add
+      margin-right: 10px
+      margin-top: 1px
+  .fill
+    top: 50px
+  #map
+    height: 100%
+    width: 100%
+    float: none
+
+  aside.concerts_pane
+    height: 0%
+    width: 100%
+    float: none
+
+  body.opened
+    #map
+      height: 70%
+      width: 100%
+      float: none
+
+    aside.concerts_pane
+      height: 30%
+      width: 100%
+      float: none
+
+@media screen and (max-height: 500px)
+  #map
+    height: 100%
+    width: 100%
+    float: none
+
+  aside.concerts_pane
+    height: 0%
+    width: 100%
+    float: none
+
+  body.opened
+    #map
+      height: 0%
+      width: 100%
+      float: none
+
+    aside.concerts_pane
+      height: 90%
+      width: 100%
+      float: none
+
+    aside.action_pane
+      height: 10%
+      width: 100%
+      float: none
+      color: white
+      background-color: #68009b
+      text-align: center
+      font-size: 20px
+      padding-top: 8px
+      a, a:hover, a:visited
+        color: white
+        text-decoration: none
+        width: 100%
