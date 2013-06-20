@@ -30,16 +30,20 @@ window.loadVenues = () ->
 
           url = "/concerts"
           $.ajax
-            url: url,
+            url: url
             data:
               lat: lat
               lng: lng
-            dataType: 'json',
+            dataType: 'json'
             type: 'GET'
+            beforeSend: (xhr) ->
+              $("body").addClass("opened")
+              $(".concerts_pane ul.concerts").html("")
+              $(".concerts_pane .spinner").show()
             success: (data, status, xhr) ->
               currCenter = window.map.getCenter()
-              $("body").addClass("opened")
-              $(".concerts_pane").html("").append(data.body)
+              $(".concerts_pane .spinner").hide()
+              $(".concerts_pane ul.concerts").append(data.body)
               setTimeout(() ->
                 google.maps.event.trigger(window.map, 'resize')
                 window.map.setCenter(currCenter)

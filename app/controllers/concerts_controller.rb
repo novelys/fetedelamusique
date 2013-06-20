@@ -10,7 +10,7 @@ class ConcertsController < ApplicationController
     respond_to do |format|
       format.html
       format.json {
-        body = render_to_string :template => "/concerts/index.html.haml", :collection => @concerts, :layout => false
+        body = render_to_string :partial => "concert", :collection => @concerts, :layout => false, :formats => [:html]
         render :json => {body: body}.to_json
       }
     end
