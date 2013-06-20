@@ -18,7 +18,7 @@
         = image_tag "logo_fete_de_la_musique_mini.png", class: "visible-phone"
       = link_to "#", class: "marker" do
         %span.icon-map-marker
-      = link_to new_concert_path, class: "add" do
+      = link_to new_concert_path, class: "add", target: "_blank" do
         %span.icon-plus
     = yield
     = javascript_include_tag "application", "data-turbolinks-track" => true
