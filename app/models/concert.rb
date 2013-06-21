@@ -34,15 +34,37 @@ class Concert
 
   attr_accessor :lat, :lng
 
+  rails_admin do
+    list do
+      field :is_official do
+        label "Officiel"
+      end
+      field :is_validated do
+        label "Validé"
+      end
+      field :created_at do
+        label "Crée à"
+      end
+      field :artist do
+        label "Artiste"
+      end
+     end
+  end
+
   before_validation do |concert|
     if concert.is_validated == "1"
       concert.is_validated = true
     elsif concert.is_validated == "0"
       concert.is_validated = false
     end
+    if concert.is_official == "1"
+      concert.is_official = true
+    elsif concert.is_official == "0"
+      concert.is_official = false
+    end
     true
   end
-    
+
   def concert_id
     id.to_s
   end
