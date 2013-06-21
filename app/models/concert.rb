@@ -57,10 +57,6 @@ class Concert
     elsif concert.is_validated == "0"
       concert.is_validated = false
     end
-    true
-  end
-    
-  before_validation do |concert|
     if concert.is_official == "1"
       concert.is_official = true
     elsif concert.is_official == "0"
