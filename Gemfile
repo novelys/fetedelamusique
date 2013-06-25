@@ -66,3 +66,4 @@ gem 'devise', git: 'https://github.com/plataformatec/devise', :branch => 'rails4
 gem 'rails_admin', git: 'https://github.com/sferik/rails_admin', :branch => 'rails-4'
 gem 'rails_admin-i18n', git: 'https://github.com/starchow/rails_admin-i18n'
 
+gem 'modernizr_rails'
