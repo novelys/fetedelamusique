@@ -70,8 +70,10 @@ class Concert
   end
 
   def for_api
-    keys = %w(is_official artist artist_url genre description venue_alt time_start time_end photo)
-    attributes.slice(*keys)
+    keys = %w(is_official artist artist_url genre description venue_alt time_start time_end)
+    hsh = attributes.slice(*keys)
+    hsh['photo'] = photo.url
+    hsh
   end
 
   def self.load_official_concerts
