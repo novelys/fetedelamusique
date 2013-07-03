@@ -1,29 +1,25 @@
 class VenuesController < ApplicationController
-
   def index
+    @concerts = Concert.displayed.all
 
     respond_to do |format|
       format.html
-      format.json {
-        concerts = Concert.displayed.all
-
-        venues = concerts.uniq{|concert| concert.coordinates.to_a}.inject([]) {|memo, concert|
-          hsh = {
-            lat: concert.coordinates.last,
-            lng: concert.coordinates.first,
-            name: concert.venue
+      format.json do
+        grouped_concerts = @concerts.group_by(&:coordinates).map do |coordinates, concerts|
+          {
+            lat: coordinates.last,
+            lng: coordinates.first,
+            name: concerts.first.venue,
+            count: concerts.size,
+            concerts: concerts.map(&:for_api)
           }
-          memo << hsh
-          memo
-        }
+        end
 
-        render :json => venues.to_json
-      }
-      format.xml {
-        @concerts = Concert.displayed.all
-
+        render :json => grouped_concerts.to_json
+      end
+      format.xml do
         render :xml => @concerts.to_xml
-      }
+      end
     end
   end
 
@@ -32,10 +28,9 @@ class VenuesController < ApplicationController
 
     respond_to do |format|
       format.html
-      format.json {
+      format.json do
         render :json => @concert.to_json
-      }
+      end
     end
   end
-
 end

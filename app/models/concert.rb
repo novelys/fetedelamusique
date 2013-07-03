@@ -69,6 +69,13 @@ class Concert
     id.to_s
   end
 
+  def for_api
+    keys = %w(is_official artist artist_url genre description venue_alt time_start time_end)
+    hsh = attributes.slice(*keys)
+    hsh['photo'] = photo.url
+    hsh
+  end
+
   def self.load_official_concerts
     f = File.open("doc/strasbourg-fete-de-la-musique-2013.xml")
     doc = Nokogiri::XML(f)
