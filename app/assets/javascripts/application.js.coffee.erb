@@ -6,6 +6,7 @@
 #= require bootstrap
 #= require bootstrap-datetimepicker
 #= require locales/bootstrap-datetimepicker.fr
+#= require modernizr
 #= require_tree .
 
 window.loadVenues = () ->
@@ -81,6 +82,8 @@ $(document).ready ->
 
     $(".marker").on "click", (event) ->
       event.preventDefault()
+      Modernizr.load(
+        test: Modernizr.geolocation,
+        nope: 'geo.js'
+      )
       navigator.geolocation.getCurrentPosition handleGetCurrentPosition
-
-
