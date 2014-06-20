@@ -78,7 +78,7 @@ test:
 production:
   sessions:
     default:
-      uri: <%= ENV['MONGOLAB_URI'] %>
+      uri: <%= ENV['APPSDECK_MONGO_URL'] %>
       options:
         safe: true
         skip_version_check: true
