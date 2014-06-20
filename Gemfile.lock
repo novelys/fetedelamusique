@@ -33,9 +33,10 @@ GEM
       activemodel
       fog (>= 1.8.0)
     bcrypt (3.1.7)
-    bootstrap-datetimepicker-rails (0.0.11)
     bootstrap-sass (3.1.1.1)
       sass (~> 3.2)
+    bootstrap3-datetimepicker-rails (3.0.0.1)
+      momentjs-rails (~> 2.5.0)
     bson (2.3.0)
     builder (3.1.4)
     climate_control (0.0.3)
@@ -119,6 +120,8 @@ GEM
     mime-types (1.25.1)
     mini_portile (0.6.0)
     minitest (4.7.5)
+    momentjs-rails (2.5.1)
+      railties (>= 3.1)
     mongoid (4.0.0.rc2)
       activemodel (~> 4.0)
       moped (~> 2.0.0.rc2)
@@ -246,8 +249,8 @@ PLATFORMS
 DEPENDENCIES
   airbrake
   asset_sync
-  bootstrap-datetimepicker-rails
   bootstrap-sass
+  bootstrap3-datetimepicker-rails (~> 3.0.0)
   coffee-rails (~> 4.0.0)
   devise
   dotenv-rails
@@ -258,6 +261,7 @@ DEPENDENCIES
   jbuilder (~> 1.2)
   jquery-rails
   jquery-turbolinks
+  momentjs-rails (~> 2.5.0)
   mongoid (= 4.0.0.rc2)
   mongoid-paperclip
   nokogiri

@@ -2,10 +2,11 @@
   .row-fluid
     .span12
       = simple_form_for(@concert, :html => {:class => 'form-horizontal' }) do |f|
-        .control-group
+        .form-group
           .controls
             %h1 Ajouter un nouveau concert
-        = f.error_notification
+        .form-group
+          = f.error_notification
         = hidden_field_tag :lat
         = hidden_field_tag :lng
         = f.input :artist, input_html: { class: 'input-xxlarge' }
@@ -13,25 +14,19 @@
         = f.input :genre, input_html: { class: 'input-xxlarge' }
         = f.input :description, as: :text, input_html: { class: 'input-xxlarge' }
         = f.input :venue, input_html: { class: 'input-xxlarge' }
-        .control-group
-          .controls
-            .map_preview{style: "display:block;width:400px;height:400px;padding:20px;"}
+        .map_preview{style: "display:block;width:400px;height:400px;padding:20px;"}
         = f.input :photo
         = f.input :contact_email, input_html: { class: 'input-xxlarge' }
-        .control-group
-          = f.label :time_start, "Heure de début", class: "control-label"
-          .controls
-            .input-append.date
-              = f.input_field :time_start, "data-format" => "dd/MM/yyyy hh:mm", "readonly" => "readonly", "value" => "06/21/2014 16:00"
-              %span.add-on
-                %i{"data-time-icon" => "icon-time", "data-date-icon" => "icon-calendar"}
-        .control-group
-          = f.label :time_end, "Heure de fin", class: "control-label"
-          .controls
-            .input-append.date
-              = f.input_field :time_end, "data-format" => "dd/MM/yyyy hh:mm", "readonly" => "readonly", "value" => "06/21/2014 17:00"
-              %span.add-on
-                %i{"data-time-icon" => "icon-time", "data-date-icon" => "icon-calendar"}
+        = f.label :time_start, "Heure de début", class: "control-label"
+        .input-group.date
+          = f.input_field :time_start, "data-date-format" => "DD/MM/YYYY HH:MM", "readonly" => "readonly", "value" => "21/06/2014 16:00", "class" => "form-control"
+          %span.input-group-addon
+            %i.fa.fa-calendar
+        = f.label :time_end, "Heure de fin", class: "control-label"
+        .input-group.date
+          = f.input_field :time_end, "data-date-format" => "DD/MM/YYYY HH:MM", "readonly" => "readonly", "value" => "21/06/2014 17:00", "class" => "form-control"
+          %span.input-group-addon
+            %i.fa.fa-calendar
         .form-actions
           = f.button :submit, "Envoyer", :class => "btn btn-large btn-primary"
 
@@ -40,17 +35,13 @@
     $(document).ready(function() {
 
       // 05 → June (January is 0)
-      dtps = $(".date").datetimepicker({
-        "maskInput": false,
-        "language": "fr-FR",
-        "pickSeconds": false,
-        "autoclose": true,
-        "startDate": new Date(2014, 5, 21, 18),
-        "endDate": new Date(2014, 5, 22, 10)
+      $(".date").datetimepicker({
+        "language": "fr",
+        "useSeconds": false
       });
 
-      $(dtps[0]).data("datetimepicker").setLocalDate(new Date(2014,5,21,16));
-      $(dtps[1]).data("datetimepicker").setLocalDate(new Date(2014,5,21,17));
+      // $(dtps[0]).data("datetimepicker").setLocalDate(new Date(2014,6,21,16));
+      // $(dtps[1]).data("datetimepicker").setLocalDate(new Date(2014,6,21,17));
 
       $("#concert_venue").geocomplete({
         map: ".map_preview",
