@@ -1,13 +1,13 @@
 source 'https://rubygems.org'
 
-ruby '2.0.0'
+ruby '2.1.2'
 
 # Bundle edge Rails instead: gem 'rails', git: 'https://github.com/rails/rails'
-gem 'rails', '4.0.0.rc2'
+gem 'rails', '4.0.5'
 gem 'rails-i18n'
 
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.0.rc2'
+gem 'sass-rails', '~> 4.0.0'
 gem 'haml-rails'
 
 # Use Uglifier as compressor for JavaScript assets
@@ -48,20 +48,21 @@ gem 'asset_sync'
 # gem 'debugger', group: [:development, :test]
 
 gem 'bootstrap-sass'
+gem 'font-awesome-rails'
 gem 'bootstrap-datetimepicker-rails'
-gem 'simple_form', git: 'https://github.com/plataformatec/simple_form'
+gem 'simple_form'
 
 gem 'pry-rails', group: [:development]
 gem 'pry-nav', group: [:development]
 gem 'dotenv-rails', :groups => [:development, :test]
 gem 'airbrake'
 
-gem 'mongoid', git: 'https://github.com/mongoid/mongoid'
+gem 'mongoid', '4.0.0.rc2 '
 gem 'mongoid-paperclip', :require => 'mongoid_paperclip'
 gem 'fog'
 gem 'geocoder', git: 'https://github.com/alexreisner/geocoder'
 
 gem 'nokogiri'
-gem 'devise', git: 'https://github.com/plataformatec/devise', :branch => 'rails4'
-gem 'rails_admin', git: 'https://github.com/sferik/rails_admin', :branch => 'rails-4'
-gem 'rails_admin-i18n', git: 'https://github.com/starchow/rails_admin-i18n'
+gem 'devise'
+gem 'rails_admin'
+gem 'rails_admin-i18n'

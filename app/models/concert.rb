@@ -30,7 +30,7 @@ class Concert
 
   validates_presence_of :artist, :time_start, :time_end, :coordinates
 
-  scope :displayed, where(:coordinates.exists => true).any_of({is_official: true}, {is_validated: true})
+  scope :displayed, -> { where(:coordinates.exists => true).any_of({is_official: true}, {is_validated: true}) }
 
   attr_accessor :lat, :lng
 
@@ -77,17 +77,10 @@ class Concert
   end
 
   def self.load_official_concerts
-    f = File.open("doc/strasbourg-fete-de-la-musique-2013.xml")
-    doc = Nokogiri::XML(f)
-    f.close
-
     counter = 0
+    filename = "doc/pgm-fdm-2014.csv"
+    CSV.foreach(filename) do |row|
 
-    doc.xpath("//band").each{|band_node|
-
-      picture_url = band_node.xpath("picture/url").try(:first).try(:content)
-      live_node = band_node.xpath("live").first
-      location_node = band_node.xpath("live/location").first
       coordinates = [ location_node["lon"].to_f, location_node["lat"].to_f ]
 
       if (loc = location_node.xpath("name").first.content).present?
@@ -114,7 +107,8 @@ class Concert
       concert.save!
 
       counter+=1
-    }
+
+    end
 
     counter
   end
