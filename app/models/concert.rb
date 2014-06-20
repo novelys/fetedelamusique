@@ -24,11 +24,12 @@ class Concert
     }
   }
 
-  reverse_geocoded_by :coordinates
+  geocoded_by :venue
+  after_validation :geocode # auto-fetch coordinates
 
   index({ coordinates: "2d" }, { min: -200, max: 200 })
 
-  validates_presence_of :artist, :time_start, :time_end, :coordinates
+  validates_presence_of :artist, :time_start, :time_end
 
   scope :displayed, -> { where(:coordinates.exists => true).any_of({is_official: true}, {is_validated: true}) }
 
@@ -79,35 +80,44 @@ class Concert
   def self.load_official_concerts
     counter = 0
     filename = "doc/pgm-fdm-2014.csv"
-    CSV.foreach(filename) do |row|
+    venue = nil
+    CSV.foreach(filename, headers: true) do |row|
 
-      coordinates = [ location_node["lon"].to_f, location_node["lat"].to_f ]
+      venue = "#{row[1]}, Strasbourg" if row[1].present?
+      time_start_raw = row[2]
+      time_end_raw   = row[3]
 
-      if (loc = location_node.xpath("name").first.content).present?
-        venue = loc
+      if time_start_raw.present?
+        hour, minute = time_start_raw.split("h").map(&:to_i)
+        if hour < 3
+          time_start = Time.new 2014, 6, 22, hour, minute
+        else
+          time_start = Time.new 2014, 6, 21, hour, minute
+        end
       end
-      if (loc = location_node.xpath("name").first["alt"]).present?
-        venue_alt = loc
+
+      if time_end_raw.present?
+        hour, minute = time_end_raw.split("h").map(&:to_i)
+        if hour < 3
+          time_end = Time.new 2014, 6, 22, hour, minute
+        else
+          time_end = Time.new 2014, 6, 21, hour, minute
+        end
       end
 
       concert = Concert.new({
         is_official: true,
-        artist: band_node.xpath("name").first.content,
-        artist_url: band_node["url"],
-        genre: band_node.xpath("genre").first.content,
-        description: band_node.xpath("description").first.content,
-        coordinates: coordinates,
+        artist: row[4],
+        artist_url: row[6],
+        genre: row[5],
+        description: row[7],
         venue: venue,
-        venue_alt: venue_alt,
-        time_start: live_node["start"],
-        time_end: live_node["end"],
-        photo: picture_url.blank? ? nil : URI.parse(picture_url)
+        venue_alt: row[0],
+        time_start: time_start,
+        time_end: time_end
       })
 
-      concert.save!
-
-      counter+=1
-
+      counter += 1 if concert.save
     end
 
     counter

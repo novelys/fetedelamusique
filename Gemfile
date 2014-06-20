@@ -60,7 +60,7 @@ gem 'airbrake'
 gem 'mongoid', '4.0.0.rc2 '
 gem 'mongoid-paperclip', :require => 'mongoid_paperclip'
 gem 'fog'
-gem 'geocoder', git: 'https://github.com/alexreisner/geocoder'
+gem 'geocoder'
 
 gem 'nokogiri'
 gem 'devise'
