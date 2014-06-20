@@ -1,11 +1,11 @@
 !!!
 %html
   %head
-    %title Fête de la Musique 2013 à Strasbourg
+    %title Fête de la Musique 2014 à Strasbourg
     %meta{name: "viewport", content: "width=device-width, initial-scale=1.0"}
-    %meta{property: "og:title", content: "Fête de la Musique 2013 à Strasbourg"}
+    %meta{property: "og:title", content: "Fête de la Musique 2014 à Strasbourg"}
     %meta{property: "og:type", content: "website"}
-    %meta{property: "og:description", content: "Liste des concerts officiels (et les autres) de la Fête de la Musique 2013 à Strasbourg"}
+    %meta{property: "og:description", content: "Liste des concerts officiels (et les autres) de la Fête de la Musique 2014 à Strasbourg"}
     %meta{property: "og:image", content: asset_url("fb.png")}
     = stylesheet_link_tag    "application", media: "all"
     = stylesheet_link_tag "http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600italic,600,700,700italic,800,800italic"
@@ -21,9 +21,9 @@
       = link_to new_concert_path, class: "add", target: "_blank" do
         %span.fa.fa-plus
     = yield
-    = javascript_include_tag "application"
     - api_key = "AIzaSyDr7frVgm9VD5UvDnphSR3juK6G8JtiWNk"
     = javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=#{api_key}&sensor=false&libraries=places"
+    = javascript_include_tag "application"
     = yield :extra_js
     :javascript
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
