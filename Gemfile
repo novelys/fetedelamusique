@@ -66,3 +66,5 @@ gem 'nokogiri'
 gem 'devise'
 gem 'rails_admin'
 gem 'rails_admin-i18n'
+
+gem 'rails_12factor', :groups => [:staging, :production]
