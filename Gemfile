@@ -1,32 +1,19 @@
 source 'https://rubygems.org'
 
-ruby '2.1.2'
+ruby '2.3.1'
 
-# Bundle edge Rails instead: gem 'rails', git: 'https://github.com/rails/rails'
-gem 'rails', '4.0.5'
-gem 'rails-i18n'
-
-# Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.0'
-gem 'haml-rails'
-
-# Use Uglifier as compressor for JavaScript assets
+# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+gem 'rails', '>= 5.0.0.rc1', '< 5.1'
+gem 'rails-i18n', '~> 5.0.0.beta4'
+gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
+gem 'coffee-rails', '~> 4.1.0'
+gem 'haml'
 
-# Use CoffeeScript for .js.coffee assets and views
-gem 'coffee-rails', '~> 4.0.0'
-
-# See https://github.com/sstephenson/execjs#readme for more supported runtimes
-# gem 'therubyracer', platforms: :ruby
-
-# Use jquery as the JavaScript library
 gem 'jquery-rails'
-
-# Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 gem 'jquery-turbolinks'
 
-# Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
 group :doc do
@@ -49,23 +36,39 @@ gem 'asset_sync'
 
 gem 'bootstrap-sass'
 gem 'font-awesome-rails'
-gem 'momentjs-rails', '~> 2.5.0'
-gem 'bootstrap3-datetimepicker-rails', '~> 3.0.0'
+gem 'momentjs-rails'
+gem 'bootstrap3-datetimepicker-rails'
 gem 'simple_form'
 
-gem 'pry-rails', group: [:development]
-gem 'pry-nav', group: [:development]
-gem 'dotenv-rails', :groups => [:development, :test]
-gem 'airbrake'
-
-gem 'mongoid', '4.0.0.rc2 '
-gem 'mongoid-paperclip', :require => 'mongoid_paperclip'
-gem 'fog'
+gem 'mongoid', github: 'mongodb/mongoid'
+gem 'fog-aws'
+gem 'fog', require: 'fog/aws/storage'
+gem 'paperclip', '~> 5.0.0.beta2'
+gem 'mongoid-paperclip', require: "mongoid_paperclip"
 gem 'geocoder'
 
-gem 'nokogiri'
 gem 'devise'
-gem 'rails_admin'
-gem 'rails_admin-i18n'
+
+group :development, :test do
+  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem 'byebug', platform: :mri
+
+  gem 'pry-rails'
+  gem 'pry-nav'
+  gem 'dotenv-rails'
+  gem 'scalingo_databases_rake_tasks'
+end
+
+group :development do
+  # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
+  gem 'web-console'
+  gem 'listen', '~> 3.0.5'
+  # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
+  gem 'spring'
+  gem 'spring-watcher-listen', '~> 2.0.0'
+end
 
 gem 'rails_12factor', :groups => [:staging, :production]
+
+# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
+gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]

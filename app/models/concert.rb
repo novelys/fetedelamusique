@@ -1,3 +1,5 @@
+require "csv"
+
 class Concert
   include Mongoid::Document
   include Mongoid::Timestamps
@@ -35,22 +37,22 @@ class Concert
 
   attr_accessor :lat, :lng
 
-  rails_admin do
-    list do
-      field :is_official do
-        label "Officiel"
-      end
-      field :is_validated do
-        label "Validé"
-      end
-      field :created_at do
-        label "Crée à"
-      end
-      field :artist do
-        label "Artiste"
-      end
-     end
-  end
+  # rails_admin do
+  #   list do
+  #     field :is_official do
+  #       label "Officiel"
+  #     end
+  #     field :is_validated do
+  #       label "Validé"
+  #     end
+  #     field :created_at do
+  #       label "Crée à"
+  #     end
+  #     field :artist do
+  #       label "Artiste"
+  #     end
+  #    end
+  # end
 
   before_validation do |concert|
     if concert.is_validated == "1"
@@ -77,9 +79,9 @@ class Concert
     hsh
   end
 
-  def self.load_official_concerts
+  def self.load_official_concerts filename = nil
     counter = 0
-    filename = "doc/pgm-fdm-2014.csv"
+    filename ||= "doc/pgm-fdm-2016.csv"
     venue = nil
     CSV.foreach(filename, headers: true) do |row|
 
@@ -90,18 +92,18 @@ class Concert
       if time_start_raw.present?
         hour, minute = time_start_raw.split("h").map(&:to_i)
         if hour < 3
-          time_start = Time.new 2014, 6, 22, hour, minute
+          time_start = Time.new 2016, 6, 22, hour, minute
         else
-          time_start = Time.new 2014, 6, 21, hour, minute
+          time_start = Time.new 2016, 6, 21, hour, minute
         end
       end
 
       if time_end_raw.present?
         hour, minute = time_end_raw.split("h").map(&:to_i)
         if hour < 3
-          time_end = Time.new 2014, 6, 22, hour, minute
+          time_end = Time.new 2016, 6, 22, hour, minute
         else
-          time_end = Time.new 2014, 6, 21, hour, minute
+          time_end = Time.new 2016, 6, 21, hour, minute
         end
       end
 

@@ -1,8 +1,8 @@
 class ConcertsController < ApplicationController
   def index
     if params[:lat].present? && params[:lng].present?
-      coordinates = [params[:lat].to_f, params[:lng].to_f]
-      @concerts = Concert.near(coordinates, 0.010, :units => :km).displayed.sort_by(&:time_start)
+      coordinates = [params[:lng].to_f, params[:lat].to_f]
+      @concerts = Concert.displayed.geo_near(coordinates).max_distance(0.010.fdiv(6_371)).spherical.sort_by(&:time_start)
     else
       @concerts = Concert.displayed.all
     end
@@ -10,8 +10,8 @@ class ConcertsController < ApplicationController
     respond_to do |format|
       format.html
       format.json {
-        body = render_to_string :partial => "concert", :collection => @concerts, :layout => false, :formats => [:html]
-        render :json => {body: body}.to_json
+        body = render_to_string partial: "concert", collection: @concerts, layout: false, formats: [:html]
+        render json: {body: body}.to_json
       }
     end
   end
@@ -28,9 +28,9 @@ class ConcertsController < ApplicationController
     @concert.coordinates = create_coordinates
 
     if @concert.save
-      render :action => "thank_you"
+      render action: "thank_you"
     else
-      render :action => "new"
+      render action: "new"
     end
   end
 

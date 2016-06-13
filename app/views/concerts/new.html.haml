@@ -19,12 +19,12 @@
         = f.input :contact_email, input_html: { class: 'input-xxlarge' }
         = f.label :time_start, "Heure de début", class: "control-label"
         .input-group.date
-          = f.input_field :time_start, "data-date-format" => "DD/MM/YYYY HH:MM", "readonly" => "readonly", "value" => "21/06/2014 16:00", "class" => "form-control"
+          = f.input_field :time_start, "data-date-format" => "DD/MM/YYYY HH:MM", "readonly" => "readonly", "value" => "21/06/2016 16:00", "class" => "form-control"
           %span.input-group-addon
             %i.fa.fa-calendar
         = f.label :time_end, "Heure de fin", class: "control-label"
         .input-group.date
-          = f.input_field :time_end, "data-date-format" => "DD/MM/YYYY HH:MM", "readonly" => "readonly", "value" => "21/06/2014 17:00", "class" => "form-control"
+          = f.input_field :time_end, "data-date-format" => "DD/MM/YYYY HH:MM", "readonly" => "readonly", "value" => "21/06/2016 17:00", "class" => "form-control"
           %span.input-group-addon
             %i.fa.fa-calendar
         .form-actions
@@ -40,8 +40,8 @@
         "useSeconds": false
       });
 
-      // $(dtps[0]).data("datetimepicker").setLocalDate(new Date(2014,6,21,16));
-      // $(dtps[1]).data("datetimepicker").setLocalDate(new Date(2014,6,21,17));
+      // $(dtps[0]).data("datetimepicker").setLocalDate(new Date(2016,6,21,16));
+      // $(dtps[1]).data("datetimepicker").setLocalDate(new Date(2016,6,21,17));
 
       $("#concert_venue").geocomplete({
         map: ".map_preview",
