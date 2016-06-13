@@ -119,7 +119,10 @@ class Concert
         time_end: time_end
       })
 
-      counter += 1 if concert.save
+      if concert.save
+        counter += 1
+        sleep(1)
+      end
     end
 
     counter
