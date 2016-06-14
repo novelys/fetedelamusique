@@ -1,7 +1,10 @@
-%li.concert
-  %p.artist= concert.artist
-  %p.schedule= "De #{ concert.time_start.strftime("%H:%M") } à #{ concert.time_end.strftime("%H:%M") }"
-  = concert_venue(concert)
-  = image_tag concert.photo.url(:small) if concert.photo.file?
-  %p= concert.description
-  = link_to "Site web de l'artiste", concert.artist_url, target: "_blank" if concert.artist_url.present?
+.row{style: "margin-bottom:20px;"}
+  .col-xs-12.col-sm-6
+    %p.artist= concert.artist
+    %p.schedule= "De #{ concert.time_start.strftime("%H:%M") } à #{ concert.time_end.strftime("%H:%M") }"
+    = concert_venue(concert)
+    = image_tag concert.photo.url(:small) if concert.photo.file?
+    %p= concert.description
+    = link_to "Site web de l'artiste", concert.artist_url, target: "_blank" if concert.artist_url.present?
+  .col-xs-12.col-sm-6
+    .map{style: "height:200px;width:100%;display:block;", data: {lng: concert.coordinates.first, lat: concert.coordinates.last}}

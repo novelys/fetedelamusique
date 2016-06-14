@@ -82,3 +82,27 @@ $(document).ready ->
       navigator.geolocation.getCurrentPosition handleGetCurrentPosition
 
 
+  $(".map").each () ->
+    node = $(this)
+    lat = node.data("lat")
+    lng = node.data("lng")
+
+    console.log lat
+    console.log lng
+
+    map = new google.maps.Map node.get(0),
+      center:
+        lat: lat
+        lng: lng
+      zoom: 15
+
+    lat_lng = new google.maps.LatLng(lat, lng)
+    marker = new google.maps.Marker
+      position: lat_lng
+      map: map
+
+    google.maps.event.addDomListener window, "resize", () ->
+      center = map.getCenter()
+      google.maps.event.trigger(map, "resize")
+      map.setCenter(center)
+
