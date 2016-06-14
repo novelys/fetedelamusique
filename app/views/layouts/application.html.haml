@@ -13,13 +13,13 @@
     = csrf_meta_tags
   %body{class: controller.controller_name == "venues" && controller.action_name == "index" && "homepage"}
     %nav
-      = link_to "/", class: "logo" do
+      = link_to "#", class: "marker pull-left" do
+        = fa_icon "map-marker"
+      = link_to new_concert_path, class: "add pull-right", target: "_blank" do
+        = fa_icon "plus"
+      = link_to "/", class: "logo text-center" do
         = image_tag "logo_fete_de_la_musique.png", class: "hidden-xs"
         = image_tag "logo_fete_de_la_musique_mini.png", class: "visible-xs"
-      = link_to "#", class: "marker" do
-        %span.fa.fa-map-marker
-      = link_to new_concert_path, class: "add", target: "_blank" do
-        %span.fa.fa-plus
     = yield
     - api_key = "AIzaSyDr7frVgm9VD5UvDnphSR3juK6G8JtiWNk"
     = javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=#{api_key}&sensor=false&libraries=places"
